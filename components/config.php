@@ -4,12 +4,12 @@ include $_SERVER['DOCUMENT_ROOT'].'/components/parser.php';
 
 $config = array(
 	//Name of site //Название Сайта
-	'SITE_NAME'						=> 'AlPiEngine',
+	'SITE_NAME'						=> 'Mobile Glory',
 	//Name, from whitch E-mails will sent //Имя, от которого будут приходить E-mail
 	'emailHeaderFromAdress' 		=> 'test@artmyrm.xyz',
 	'emailHeaderFromName'			=> 'Robot',
 	//E-mail to receive feedback //E-mail, на который будут приходить отзывы
-	'EMAIL_FOR_FEEDBACK'			=> 'lexspeedkb@gmail.com',
+	'EMAIL_FOR_FEEDBACK'			=> 'mglorytournaments@gmail.com',
 	//Protocol //Протокол
 	'PROTOCOL'						=> 'https://',
 	//Domail //Домен
@@ -34,7 +34,7 @@ $config = array(
 	//Path to files for download //Путь к файлам для скачивания
 	'PATH_TO_FILES_FOR_DOWNLOAD'	=> '/files/download/',
 	//Default language //Стандартный язык
-	'DEFAULT_LANGUAGE'				=> 'en',
+	'DEFAULT_LANGUAGE'				=> 'ru',
 	//Path to dir with language packages //Путь к папке с языковыми пакетами
 	'PATH_TO_LANGUAGES'				=> '/components/lang/',
 	//Access Control Allow Origin to API //Контроль доступа к API извне
@@ -42,7 +42,7 @@ $config = array(
 	//Time of short session //Время жизни короткой сессии
 	'TIME_OF_SHORT_SESSION'			=> 1,
 	//Default page of logged user //Стандартная страница, которая открывается залогиненному пользователю
-	'USER_DEFAULT_PAGE'				=> 'MyPage',
+	'USER_DEFAULT_PAGE'				=> 'list',
 	
 	
 	// SMTP

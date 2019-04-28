@@ -9,6 +9,8 @@ class API{
 		$Users = new Users();
 		$login = $_GET['login'];
 		$email = $_GET['email'];
+		$pass1 = $_GET['pass1'];
+		$pass2 = $_GET['pass2'];
 		if($_GET['get']=='email' && empty($email)){
 			echo "empty";
 		}
@@ -23,29 +25,72 @@ class API{
 		 * 2 - different passwords
 		 * 3 - login exists
 		 * 4 - invalid email
+		 * 5 - empty login
+		 * 6 - empty email
+		 * 7 - empty password1
+		 * 8 - empty password2
 		 */
-		if($login!=""){
-			$result = $Users->logupCheck($login, "123", "321", '', "asdhjskfgsjhgjkfzdsghjfsdgjhsdkhgjdkshg@gmail.com");
-
-			if($result==3){
-				echo "3";
-			}
+		if (empty($pass1)) {
+			echo "7";
+			return 7;
+			die;
+		}
+		if (empty($pass1)) {
+			echo "8";
+			return 8;
+			die;
+		}
+		if ($pass1 != $pass2) {
+			echo "2";
+			return 2;
+			die;
 		}
 		if($email!=""){
-				//login that 100% not exists:) 
-				//just don't touch this, its work great)
-				$result = $Users->logupCheck("hdjfgklskjdhfgkjsdlfkjghdjsfklgjhdgjksldgjhj", "123", "321", '', $email);
-		
-				if($result==4){
-					echo "4";
+			//login that 100% not exists:) 
+			//just don't touch this, its work great)
+			$result = $Users->logupCheck("hdjfgklskjdhfgkjsdlfkjghdjsfklgjhdgjksldgjhj", "123", "321", '', $email);
+	
+			if($result==4){
+				echo "4";
+				return 4;
+				die;
+			}else{
+				if($result==1){
+					echo "1";
+					return 1;
+					die;
 				}else{
-					if($result==1){
-						echo "1";
+					if($login!=""){
+						$result = $Users->logupCheck($login, "123", "321", '', "asdhjskfgsjhgjkfzdsghjfsdgjhsdkhgjdkshg@gmail.com");
+
+						if($result==3){
+							echo "3";
+							return 3;
+							die;
+						}else{
+							echo "0";
+							return 0;
+							die;
+						}
+					}else{
+						echo "5";
+						return 5;
+						die;
 					}
 				}
-			}else{
-				echo "";
 			}
+		}else{
+			echo "6";
+			return 6;
+			die;
+		}
+	}
+
+	public function userToDB(){
+		// if ($this->register_check()) {
+		// 	# code...
+		// }
+		$this->register_check();
 	}
 
 	public function get_lang($lang){

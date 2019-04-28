@@ -3,9 +3,12 @@
   <!-- Вход и регистрация-->
   <login>Логин</login>
   <password>Пароль</password>
+  <password_repeat>Повторите пароль</password_repeat>
   <entrance>Вход</entrance>
+  <remember_me>Запомнить меня</remember_me>
   <come_in>Войти</come_in>
   <registration>Регистрация</registration>
+  <registrate>Зарегистрироваться</registrate>
   <already_registered>Уже зарегистрированы?</already_registered>
   <anothers_pc>Чужой компьютер</anothers_pc>
   <forget_password>Забыли пароль?</forget_password>
@@ -16,7 +19,10 @@
   <passwords_do_not_match>Пароли не совпадают!</passwords_do_not_match>
 
   <!-- Главная -->
-  <index_start_project_of_dream>Начни проект своей мечты прямо сейчас!</index_start_project_of_dream>
-  <index_share_it_with_others>Расскажи всем о нём!</index_share_it_with_others>
+  <index_start_project_of_dream>Начни свою киберспортивную карьеру</index_start_project_of_dream>
+  <index_share_it_with_others>Прямо сейчас!</index_share_it_with_others>
   <index_sign_up_to_get_ready>Зарегистрируйтесь для начала</index_sign_up_to_get_ready>
+  <index_card_title>Находи турниры</index_card_title>
+  <index_card_subtitle>Выигрывай призы</index_card_subtitle>
+  <index_card_text>В современном мире турниры по мобильным играм - абсолютно не новинка. Но до сих пор многие не знают, как и где в них учавствовать. В Glory Mobile Вы сможете отискать себе турнир по вкусу и по времени) Если Вы проводите турниры, и хотели бы сотрудничать - свяжитесь со мной по адресу mglorytournaments@gmail.com</index_card_text>
 </ru>

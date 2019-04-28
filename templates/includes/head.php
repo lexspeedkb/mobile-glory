@@ -24,6 +24,6 @@
 <div class="preloader gragientBlue">
 	<div class="preloaderBlock">
 		<img src="/templates/assets/images/preloader.gif">
-		<h2 align="center">Champions <b>mobile</b><h2>
+		<h2 align="center">Mobile <b>Glory</b><h2>
 	</div>
 </div>
