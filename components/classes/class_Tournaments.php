@@ -23,5 +23,13 @@ class Tournaments{
 		
 		return 0;
 	}
+
+	public function delete($id){
+		$SQL = new SQL();
+
+		$SQL->query("DELETE FROM tournaments WHERE id='$id'");
+
+		return 0;
+	}
 }
-?>
+?>	

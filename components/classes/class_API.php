@@ -162,13 +162,21 @@ class API{
 		$datetime	 = $_GET['datetime'];
 		$game		 = $_GET['game'];
 		$price		 = $_GET['price'];
-		$description		 = $_GET['description'];
-
-		print_r_pre($_GET);
+		$description = $_GET['description'];
 
 		$organizer = $_COOKIE['id'];
 
 		$Tournaments->add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer);
+
+		echo "0";
+	}
+
+	public function deleteTournament(){
+		$Tournaments = new Tournaments();
+
+		$id = $_GET['id'];
+
+		$Tournaments->delete($id);
 
 		echo "0";
 	}
