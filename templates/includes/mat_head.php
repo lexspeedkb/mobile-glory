@@ -14,11 +14,13 @@
 	<meta name="theme-color" content="#125eba">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="/templates/assets/css/index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="/templates/assets/css/main.css">
 	
 	<!-- Scripts -->
 	<script src="/libraries/js/jQuery.js"></script>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
 <div class="preloader gragientBlue">

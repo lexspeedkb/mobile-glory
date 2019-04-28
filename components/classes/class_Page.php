@@ -39,7 +39,13 @@ class Page extends SQL{
 			}
 			//Render page
 			$Templates = new Templates();
-			$Templates->render($pageName, $data, $OTHER_data, $lang);
+
+			//Different includes for index and portal
+			if ($pageName == "index") {
+				$Templates->render($pageName, $data, $OTHER_data, $lang, true);
+			}else {
+				$Templates->render($pageName, $data, $OTHER_data, $lang);
+			}
 		}else{
 			//API
 			if(OPEN_API){

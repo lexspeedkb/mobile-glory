@@ -1,3 +1,254 @@
+$index-background: '/templates/assets/images/PUBG-poster.jpg';
+
+@mixin outline($color, $width) {
+  text-shadow: $width*(-1) $width*(-1) 0 $color, $width $width*(-1) 0 $color, $width*(-1) $width 0 $color, $width $width 0 $color;
+}
+
+* {
+  font-family:arial;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*BUTTON*/
+
+.button {
+  border: 0px;
+  background: #555;
+  color: #fff;
+  padding: 7px;
+  &:hover {
+    background: #555;
+    color: #fff;
+    padding: 5px;
+    border: #999 solid 2px;
+  }
+}
+
+.back {
+  text-align: center;
+  background: #0056b3;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 0px;
+  left: 0px;
+}
+
+/*INPUTS*/
+
+input {
+  &:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0px 9999px #000;
+    -webkit-text-fill-color: #fff;
+    border-bottom: rgb(250, 255, 189) solid 2px !important;
+  }
+  &[type=text], &[type=password], &[type=email] {
+    background: #000;
+    padding: 5px;
+    outline: none;
+    border: #999 solid 2px;
+    color: #fff;
+  }
+}
+
+/*Input warnings*/
+
+.inputWarning {
+  background: #fff;
+  color: red;
+  border-width: 1px;
+  display: none;
+  height: 0px;
+  margin-bottom: 10px;
+}
+
+.inputWrong {
+  border-bottom: #B00 solid 2px !important;
+}
+
+/*RPELOADER*/
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: auto;
+  z-index: 9999;
+}
+
+.preloaderBlock {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+  color: #fff;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+  }
+  h2 {
+    font-weight: 100;
+  }
+}
+
+/*MAIN*/
+/*gradient*/
+
+.gragientBlue {
+  background: #1f75de;
+  /* for old browsers */
+  background: linear-gradient(to right, #1f75de, #07499a);
+}
+
+/*shadows*/
+
+.shadowBlueOut {
+  -webkit-box-shadow: 0px 2px 13px 0px rgba(7, 73, 154, 0.7);
+  -moz-box-shadow: 0px 2px 13px 0px rgba(7, 73, 154, 0.7);
+  box-shadow: 0px 2px 13px 0px rgba(7, 73, 154, 0.7);
+}
+
+.shadowBlueIn {
+  -webkit-box-shadow: 0px 2px 13px 0px rgba(7, 73, 154, 0.7) inset;
+  -moz-box-shadow: 0px 2px 13px 0px rgba(7, 73, 154, 0.7) inset;
+  box-shadow: 0px 2px 13px 0px rgba(7, 73, 154, 0.7) inset;
+}
+
+/*text*/
+
+.textBlue {
+  color: #1f75de;
+}
+
+.textWhite {
+  color: #FFF;
+}
+
+/*HEADER*/
+
+.header {
+  padding: 10px;
+  color: #fff;
+  h1 {
+    font-size: 1em;
+    font-weight: 100;
+  }
+  .login {
+    background: #fff;
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 3px;
+  }
+}
+
+.myrmFull {
+  display: block;
+}
+
+.myrmShort {
+  display: none;
+}
+
+@media (max-width: 610px) {
+  .myrmFull {
+    display: none;
+  }
+  .myrmShort {
+    display: block;
+  }
+}
+
+/*INDEX*/
+
+#overlay {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 1s 0.4s;
+}
+
+#progress {
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  width: 0;
+  top: 50%;
+  transition: 1s;
+}
+
+#progstat {
+  font-size: 0.7em;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+/*MyPage*/
+
+.zigzagAndFace {
+  border-radius: 1000px 1000px 1000px 1000px;
+  margin-top: 30px;
+  max-height: 80px;
+  background: url('/templates/assets/images/zigzag.png') 100% 50% no-repeat, linear-gradient(to right, #1f75de, #07499a);
+  p {
+    padding-left: 5%;
+    -webkit-margin-before: 1em;
+    -moz-margin-before: 1em;
+    -o-margin-before: 1em;
+    margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -moz-margin-after: 1em;
+    -o-margin-after: 1em;
+    margin-after: 1em;
+    -webkit-margin-start: 0em;
+    -moz-margin-start: 0em;
+    -o-margin-start: 0em;
+    margin-start: 0em;
+    -webkit-margin-end: 0em;
+    -moz-margin-end: 0em;
+    -o-margin-end: 0em;
+    margin-end: 0em;
+  }
+  img {
+    width: 100%;
+    border-radius: 10000px;
+    max-height: 80px;
+  }
+}
+
+.zigzagProfileImg {
+  padding: 0px;
+}
+
 .wrapper-index {
     position: absolute;
     top: 0;
