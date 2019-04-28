@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 28 2019 г., 16:46
+-- Время создания: Апр 29 2019 г., 00:03
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.0.21
 
@@ -19,8 +19,19 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `myrm`
+-- База данных: `mobile_glory`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `games`
+--
+
+CREATE TABLE `games` (
+  `id` int(255) NOT NULL,
+  `name` varchar(999) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -49,6 +60,27 @@ INSERT INTO `news` (`id`, `title`, `author_id`, `author_name`, `text`, `date_add
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `organizers`
+--
+
+CREATE TABLE `organizers` (
+  `id` int(255) NOT NULL,
+  `login` varchar(999) NOT NULL,
+  `reputation` int(100) NOT NULL,
+  `password` varchar(999) NOT NULL,
+  `link` varchar(999) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `organizers`
+--
+
+INSERT INTO `organizers` (`id`, `login`, `reputation`, `password`, `link`) VALUES
+(1, 'masters_pubg_mobile', 100, 'masters', 'http://t.me/@masters_pubg_mobile');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `session`
 --
 
@@ -68,7 +100,41 @@ CREATE TABLE `session` (
 INSERT INTO `session` (`id`, `user_id`, `user_agent`, `date_time`, `hash`, `remember_me`) VALUES
 (1, 1, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '2018-08-29 22:02:36', '1426a92a1abb2065be75576467ad4e44', 1),
 (2, 6, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '2018-08-26 00:07:56', '700ca2fb396b86187819f50a0fec2309', 1),
-(3, 1, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36', '2018-11-09 22:22:27', 'c651c187fdbe0f8d0dec222ddd51bf4e', 1);
+(3, 1, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36', '2018-11-09 22:22:27', 'c651c187fdbe0f8d0dec222ddd51bf4e', 1),
+(4, 9, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36', '2019-04-28 19:33:28', '57b3752fb0b540663e97fbb2c72e1c84', 1),
+(5, 10, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36', '2019-04-28 22:07:53', '39dff7e2832fa191be971fa3e3342f58', 1),
+(6, 10, 'Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-N950U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.2 Chrome/67.0.3396.87 Mobile Safari/537.36', '2019-04-28 22:33:57', 'b506b357409fdc77c3833edadb7f8cf4', 1),
+(7, 1, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36', '2019-04-29 00:02:13', '742371e1146def0f291e7f5c62d8bc03', 1),
+(8, 1, 'Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-N950U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.2 Chrome/67.0.3396.87 Mobile Safari/537.36', '2019-04-28 23:22:36', 'ff154b21a6f6ae1351beb0af5c571b1e', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `tournaments`
+--
+
+CREATE TABLE `tournaments` (
+  `id` int(255) NOT NULL,
+  `title` varchar(999) NOT NULL,
+  `description` text NOT NULL,
+  `free_places` int(5) NOT NULL,
+  `places` int(5) NOT NULL,
+  `organizer` int(255) NOT NULL,
+  `active` int(2) NOT NULL,
+  `datetime` datetime NOT NULL,
+  `game` varchar(999) NOT NULL,
+  `price` int(9) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `tournaments`
+--
+
+INSERT INTO `tournaments` (`id`, `title`, `description`, `free_places`, `places`, `organizer`, `active`, `datetime`, `game`, `price`) VALUES
+(1, 'Kill challange', 'За один килл 15 гривен. Присоединяяяййсяяя!!!!!', 20, 30, 1, 1, '2019-04-29 00:00:00', 'PUBG MOBILE', 30),
+(2, 'Mini-zone Месиво', 'Просто долбим друг друга сковородками. НИКАКОГО ОГНЕСТРЕЛА!!!', 5, 30, 1, 1, '2019-04-30 00:00:00', 'PUBG MOBILE', 0),
+(4, 'ytu', 'gjhgjkh', 898, 79898, 1, 1, '2001-07-25 23:01:00', 'PUBG MOBILE', 45),
+(6, 'dasd12312312332', 'asdasd', 1, 213, 1, 1, '2001-07-25 23:30:00', '123', 12);
 
 -- --------------------------------------------------------
 
@@ -85,24 +151,32 @@ CREATE TABLE `users` (
   `bio` varchar(999) DEFAULT '',
   `phone` varchar(100) DEFAULT '',
   `email` varchar(100) DEFAULT '',
-  `projects` text,
   `date_reg` datetime DEFAULT NULL,
   `date_last_seen` datetime DEFAULT NULL,
   `active` int(1) NOT NULL,
-  `active_key` varchar(999) NOT NULL
+  `active_key` varchar(999) NOT NULL,
+  `admin` int(1) NOT NULL,
+  `organizer` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `login`, `fio`, `password`, `photo`, `bio`, `phone`, `email`, `projects`, `date_reg`, `date_last_seen`, `active`, `active_key`) VALUES
-(1, 'lexspeedkb', '', 'lexus2001lexspeedkb', '1', 'adfsdf', '0951752209', 'lexspeedkb@gmail.com', '', '2018-08-19 00:00:00', '2018-08-20 00:00:00', 1, ''),
-(6, 'lexspeedkb1', 'Алексей', 'lexus2001lexspeedkb1', '', '', '', 'lexspeedkb1@gmail.com', NULL, '2018-08-26 00:03:13', NULL, 1, '');
+INSERT INTO `users` (`id`, `login`, `fio`, `password`, `photo`, `bio`, `phone`, `email`, `date_reg`, `date_last_seen`, `active`, `active_key`, `admin`, `organizer`) VALUES
+(1, 'lexspeedkb', '', 'lexus2001lexspeedkb', '1', 'adfsdf', '0951752209', 'lexspeedkb@gmail.com', '2018-08-19 00:00:00', '2018-08-20 00:00:00', 1, '', 1, 1),
+(6, 'lexspeedkb1', 'Алексей', 'lexus2001lexspeedkb1', '', '', '', 'lexspeedkb1@gmail.com', '2018-08-26 00:03:13', NULL, 1, '', 0, 0),
+(10, 'asd', '', 'asdasd', '', '', '', 'lexspeedkb@gmail.coma', '2019-04-28 19:46:19', NULL, 1, '4efQede39qouyddeErETbrbzl3MPRDTNX0w2lw6Ff2DhnSyWYURhIr0nRmXO7YbHH9FCkdRFd1Kr5UM29JW29PHyh20agHlYkFGzbhu23oKZEkTvdWUbrAg7y5WThNoCPyATUI0MM7BU76Rl9wKGCII2IvK0agiEcPmAwxoUmelcrgIyXtszEd2lJjqtV753rt0E0JEo', 0, 0);
 
 --
 -- Индексы сохранённых таблиц
 --
+
+--
+-- Индексы таблицы `games`
+--
+ALTER TABLE `games`
+  ADD PRIMARY KEY (`id`) KEY_BLOCK_SIZE=200;
 
 --
 -- Индексы таблицы `news`
@@ -111,10 +185,22 @@ ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `organizers`
+--
+ALTER TABLE `organizers`
+  ADD PRIMARY KEY (`id`) KEY_BLOCK_SIZE=200;
+
+--
 -- Индексы таблицы `session`
 --
 ALTER TABLE `session`
   ADD PRIMARY KEY (`id`) KEY_BLOCK_SIZE=255;
+
+--
+-- Индексы таблицы `tournaments`
+--
+ALTER TABLE `tournaments`
+  ADD PRIMARY KEY (`id`) KEY_BLOCK_SIZE=200;
 
 --
 -- Индексы таблицы `users`
@@ -127,20 +213,35 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT для таблицы `games`
+--
+ALTER TABLE `games`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
   MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT для таблицы `organizers`
+--
+ALTER TABLE `organizers`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT для таблицы `session`
 --
 ALTER TABLE `session`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT для таблицы `tournaments`
+--
+ALTER TABLE `tournaments`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;COMMIT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
