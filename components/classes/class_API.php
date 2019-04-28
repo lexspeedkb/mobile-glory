@@ -87,10 +87,64 @@ class API{
 	}
 
 	public function userToDB(){
-		// if ($this->register_check()) {
-		// 	# code...
-		// }
-		$this->register_check();
+		if ($this->register_check()=="0") {
+			$Users = new Users();
+
+			$login = $_GET['login'];
+			$email = $_GET['email'];
+			$pass1 = $_GET['pass1'];
+			$pass2 = $_GET['pass2'];
+
+			$Users->userToDB($login, $pass1, $pass2, $email);
+		}
+	}
+
+	/**
+	 * 0 - correct
+	 * 1 - user inactive
+	 * 2 - user not exists
+	 * 3 - incorrect password
+	 */
+	public function entrance_check($echo=true){
+		$Users = new Users();
+
+		$login = $_GET['login'];
+		$pass  = $_GET['pass'];
+
+		$result = $Users->entranceCheck($login, $pass);
+
+		if ($result == 1) {
+			echo "1";
+			return 1;
+			die;
+		} elseif ($result == 2) {
+			echo "2";
+			return 2;
+			die;
+		} elseif ($result == 3) {
+			echo "3";
+			return 3;
+			die;
+		} elseif ($result == 0) {
+			if ($echo) {
+				echo "0";
+			}
+			return 0;
+			die;
+		}
+	}
+
+	public function login(){
+		$Users = new Users();
+
+		$login = $_GET['login'];
+		$pass  = $_GET['pass'];
+
+		if ($this->entrance_check(false)=="0") {
+			$Users->login($login, $pass);
+		}
+
+		redirect('/list');
 	}
 
 	public function get_lang($lang){

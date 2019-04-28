@@ -97,7 +97,8 @@ class Users{
 	 *
 	 * Set user session
 	 */
-	public function login($login, $password, $remember=false){
+	// CHANGE REMEMBER TO FALSE ON PRODUCTION!!!!!!!!!
+	public function login($login, $password, $remember=true){
 		$SQL = new SQL();
 
 		if(isInStr('@', $login)){
@@ -115,10 +116,10 @@ class Users{
 		$this->addHash($_SERVER['HTTP_USER_AGENT'], $id, $password, $hash, $remember);
 		
 		if($remember){
-			setcookie('id',   1, 	 time()+60*60*24, '/');
+			setcookie('id',   $id, 	 time()+60*60*24, '/');
 			setcookie('hash', $hash, time()+60*60*24, '/');
 		}else{
-			setcookie('id',   1, 	 time()+10, '/');
+			setcookie('id',   $id, 	 time()+10, '/');
 			setcookie('hash', $hash, time()+10, '/');
 		}
 	}
@@ -149,7 +150,7 @@ class Users{
 		}
 	}
 
-	public function userToDB($login, $password1, $password2, $fio, $email){
+	public function userToDB($login, $password1, $password2, $email){
 		$SQL = new SQL();
 
 		$mysql = Db::getConnection();
@@ -167,17 +168,17 @@ class Users{
 		$key  = $href['key'];
 
 		//replacing
-		$message = str_replace("{{FIO}}", 		$fio, $message);
+		$message = str_replace("{{FIO}}", 		$login, $message);
 		$message = str_replace("{{shopName}}", 	$config['shopName'], $message);
 		$message = str_replace("{{HREF}}", 		$href['href'], $message);
 
 		$date = date('Y-m-d H:i:s');
 
 		//send mail
-		$Mail = new Mail();
-		$Mail->send_email($email, SITE_NAME.": Подтверждение аккаунта", $message);
+		// $Mail = new Mail();
+		// $Mail->send_email($email, SITE_NAME.": Подтверждение аккаунта", $message);
 
-		$SQL->query("INSERT INTO `users` (login, fio, password, email, active_key, active, date_reg) VALUES ('$login', '$fio', '$password', '$email', '$key', '0', '$date')");
+		$SQL->query("INSERT INTO `users` (login, fio, password, email, active_key, active, date_reg) VALUES ('$login', '$fio', '$password', '$email', '$key', '1', '$date')");
 
 		//FOR DEBUG
 		//$mysql->query("DELETE FROM `users` WHERE login='test'");

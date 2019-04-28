@@ -702,3 +702,27 @@
 [28-Apr-2019 17:06:50 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\mobile-glory\components\classes\class_Engine.php on line 20
 [28-Apr-2019 17:57:52 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 54
 [28-Apr-2019 17:58:32 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 54
+[28-Apr-2019 18:42:22 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function userToDB() on null in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php:91
+Stack trace:
+#0 D:\OSPanel\domains\mobile-glory\components\classes\class_Page.php(54): API->userToDB()
+#1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
+#2 {main}
+  thrown in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 91
+[28-Apr-2019 19:32:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function login() in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php:142
+Stack trace:
+#0 D:\OSPanel\domains\mobile-glory\components\classes\class_Page.php(54): API->login()
+#1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
+#2 {main}
+  thrown in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 142
+[28-Apr-2019 19:33:28 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\components\classes\class_API.php:129) in D:\OSPanel\domains\mobile-glory\components\classes\class_Users.php on line 119
+[28-Apr-2019 19:33:28 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\components\classes\class_API.php:129) in D:\OSPanel\domains\mobile-glory\components\classes\class_Users.php on line 120
+[28-Apr-2019 19:34:47 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\mobile-glory\components\classes\class_Engine.php on line 20
+[28-Apr-2019 19:35:00 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\mobile-glory\components\classes\class_Engine.php on line 20
+[28-Apr-2019 19:35:44 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\mobile-glory\components\classes\class_Engine.php on line 20
+[28-Apr-2019 19:37:25 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\mobile-glory\components\classes\class_Engine.php on line 20
+[28-Apr-2019 19:39:33 Europe/Moscow] PHP Warning:  require(D:/OSPanel/domains/mobile-glory/templates/list.php): failed to open stream: No such file or directory in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 24
+[28-Apr-2019 19:39:33 Europe/Moscow] PHP Fatal error:  require(): Failed opening required 'D:/OSPanel/domains/mobile-glory/templates/list.php' (include_path='.;d:/ospanel/modules/php/PHP-7.0-x64;d:/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 24
+[28-Apr-2019 19:39:56 Europe/Moscow] PHP Warning:  require(D:/OSPanel/domains/mobile-glory/templates/list.php): failed to open stream: No such file or directory in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 24
+[28-Apr-2019 19:39:56 Europe/Moscow] PHP Fatal error:  require(): Failed opening required 'D:/OSPanel/domains/mobile-glory/templates/list.php' (include_path='.;d:/ospanel/modules/php/PHP-7.0-x64;d:/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 24
+[28-Apr-2019 19:40:21 Europe/Moscow] PHP Warning:  require(D:/OSPanel/domains/mobile-glory/templates/list.php): failed to open stream: No such file or directory in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 24
+[28-Apr-2019 19:40:21 Europe/Moscow] PHP Fatal error:  require(): Failed opening required 'D:/OSPanel/domains/mobile-glory/templates/list.php' (include_path='.;d:/ospanel/modules/php/PHP-7.0-x64;d:/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 24
