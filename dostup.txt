@@ -2,3 +2,7 @@ zzz.com.ua
 login: mglorytournaments
 email: mglorytournaments@gmail.com
 pass:  Lexus2001
+
+SQL
+name: mobileglory
+pass: Lexus2001$
