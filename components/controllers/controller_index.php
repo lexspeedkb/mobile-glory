@@ -10,13 +10,13 @@ $OG_data = array(
 	'site_name' 	=> SITE_NAME,
 	'url'			=> PROTOCOL.DOMAIN.REQUEST_URI,
 	'image'			=> PROTOCOL.DOMAIN.'/templates/assets/logo.png',
-	'description'	=> 'бла бла',
+	'description'	=> 'Лучшие турниры по мобильным играм. Присоединяйся, и учавствуй в турнирах по PUBG Mobile, и другим онлайн-играм',
 );
 
 $META_data = array(
 	'title' 		=> SITE_NAME." - Главная",
-	'keywords'		=> "MyRM, my real motivation",
-	'description'	=> 'бла бла',
+	'keywords'		=> "Mobile Glory",
+	'description'	=> 'Лучшие турниры по мобильным играм. Присоединяйся, и учавствуй в турнирах по PUBG Mobile, и другим онлайн-играм',
 );
 
 
