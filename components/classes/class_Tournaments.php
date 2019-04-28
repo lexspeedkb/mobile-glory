@@ -7,5 +7,13 @@ class Tournaments{
 
 		return $tournamentsList;
 	}
+
+	public function getAllByOrganizer($organizer_id){
+		$SQL = new SQL();
+
+		$tournamentsList = $SQL->query("SELECT * FROM tournaments WHERE organizer='$organizer_id'");
+
+		return $tournamentsList;
+	}
 }
 ?>

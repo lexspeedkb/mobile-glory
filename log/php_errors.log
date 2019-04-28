@@ -731,3 +731,4 @@ Stack trace:
 [28-Apr-2019 21:00:04 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\list.php on line 2
 [28-Apr-2019 21:00:36 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\list.php on line 2
 [28-Apr-2019 21:00:49 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\list.php on line 2
+[28-Apr-2019 22:03:58 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in D:\OSPanel\domains\mobile-glory\templates\list.php on line 17

@@ -26,6 +26,9 @@
       <!-- <a class="mdl-navigation__link" href="">Редактировать профиль</a> -->
       <!-- <a class="mdl-navigation__link" href="">Настройки</a> -->
       <a class="mdl-navigation__link" href="/aboutUs">О нас</a>
+      <?php if ($data['MyAccount']['organizer']==1): ?>
+        <a class="mdl-navigation__link" href="/organize">Организация</a>
+      <?php endif ?>
       <a class="mdl-navigation__link" href="mailto:mglorytournaments@gmail.com" target="__blank">Сотрудничество</a>
       <a class="mdl-navigation__link" href="/exit" target="__blank">Выход</a>
     </nav>

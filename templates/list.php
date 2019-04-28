@@ -10,9 +10,11 @@
         <h2 class="mdl-card__title-text">#<?=$tournament['id']?> <?=$tournament['title']?></h2>
       </div>
       <div class="mdl-card__supporting-text">
+        <span>Игра: <?=$tournament['game']?></span>
+        <br>
         <span>Организатор: <?=$organizator['login']?></span>
         <br>
-        <span>Участие: <?=$tournament['price']?>Рублей</span>
+        <span>Участие: <?php if($tournament['price']==0){echo "Бесплатно";}else{echo $tournament['price']." Рублей";}?></span>
         <br>
         <span>Свободно мест: <?=$tournament['places']?>/<?=$tournament['free_places']?></span>
         <br>
