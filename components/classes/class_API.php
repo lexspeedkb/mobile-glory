@@ -171,6 +171,25 @@ class API{
 		echo "0";
 	}
 
+	public function editTournament(){
+		$Tournaments = new Tournaments();
+
+		$id			 = $_GET['id'];
+		$title		 = $_GET['title'];
+		$places		 = $_GET['places'];
+		$free_places = $_GET['free_places'];
+		$datetime	 = $_GET['datetime'];
+		$game		 = $_GET['game'];
+		$price		 = $_GET['price'];
+		$description = $_GET['description'];
+
+		$organizer = $_COOKIE['id'];
+
+		$Tournaments->edit($id, $title, $places, $free_places, $datetime, $game, $price, $description, $organizer);
+
+		echo "0";
+	}
+
 	public function deleteTournament(){
 		$Tournaments = new Tournaments();
 
@@ -191,11 +210,5 @@ class API{
 		}
 	}
 
-	/*EDITOR*/
-	public function editor_Publish(){
-		//print_r_pre($_POST['data']);
-		echo $ser = serialize($_POST['data']);
-		$ser = unserialize($ser);
-	}
 }
 ?>

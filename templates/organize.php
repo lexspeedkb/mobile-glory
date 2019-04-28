@@ -19,7 +19,7 @@
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent delete" tour_id="<?=$tournament['id']?>">
               Удалить
             </button>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored edit" tour_id="<?=$tournament['id']?>" title="<?=$tournament['title']?>" places="<?=$tournament['places']?>" free_places="<?=$tournament['free_places']?>" game="<?=$tournament['game']?>" description="<?=$tournament['description']?>" datetime="<?=$tournament['datetime']?>" price="<?=$tournament['price']?>">
               Редактировать
             </button>
           </td>
@@ -35,6 +35,7 @@
 </div>
 <br>
 <br>
+<input type="hidden"   id="inp_id" placeholder="Название турнира"><br>
 <input type="text"   id="inp_title" placeholder="Название турнира"><br>
 <textarea id="inp_description" cols="30" rows="10" placeholder="Описание"></textarea><br>
 <input type="number" id="inp_places" placeholder="Всего мест"><br>
@@ -43,7 +44,9 @@
 <input type="text"   id="inp_game" placeholder="Игра"><br>
 <input type="number"   id="inp_price" placeholder="Цена участия РУБ"><br>
 <button id="addTournament">Создать турнир</button>
-
+<button id="editTournament" style="display: none">Редактировать турнир</button>
+<br>
+<br>
 <script>
   $(document).ready(function() {
     $('body').on('click', '#addTournament', function() {
@@ -75,5 +78,42 @@
         }
       });
     });
+
+    $('body').on('click', '.edit', function() {
+      var tour_id = $(this).attr("tour_id");
+
+      $('#addTournament').css('display', 'none');
+      $('#editTournament').css('display', 'block');
+
+      $('#inp_id').val(tour_id);
+      $('#inp_title').val($(this).attr('title'));
+      $('#inp_description').val($(this).attr('description'));
+      $('#inp_places').val($(this).attr('places'));
+      $('#inp_free_places').val($(this).attr('free_places'));
+      $('#inp_datetime').val($(this).attr('datetime'));
+      $('#inp_game').val($(this).attr('game'));
+      $('#inp_price').val($(this).attr('price'));
+    });
+
+    $('body').on('click', '#editTournament', function() {
+      var tour_id         = $(this).attr("tour_id");
+      var inp_id          = $('#inp_id').val();
+      var inp_title       = $('#inp_title').val();
+      var inp_description = $('#inp_description').val();
+      var inp_places      = $('#inp_places').val();
+      var inp_free_places = $('#inp_free_places').val();
+      var inp_datetime    = $('#inp_datetime').val();
+      var inp_game        = $('#inp_game').val();
+      var inp_price       = $('#inp_price').val();
+
+      $.ajax({
+        url: '/api/editTournament',
+        data: {id: inp_id, title: inp_title, places: inp_places, free_places: inp_free_places, datetime: inp_datetime, game: inp_game, price: inp_price, description: inp_description},
+        success: function(){
+          location.reload();
+        }
+      });
+    });
+
   });
 </script>

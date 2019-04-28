@@ -24,6 +24,16 @@ class Tournaments{
 		return 0;
 	}
 
+	public function edit($id, $title, $places, $free_places, $datetime, $game, $price, $description){
+		$SQL = new SQL();
+
+		print_r_pre(func_get_args());
+
+		$SQL->query("UPDATE tournaments SET title='$title', places='$places', free_places='$free_places', datetime='$datetime', game='$game', price='$price', description='$description' WHERE id='$id'");
+		
+		return 0;
+	}
+
 	public function delete($id){
 		$SQL = new SQL();
 

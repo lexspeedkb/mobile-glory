@@ -2,7 +2,11 @@
 //script here
 $Tournaments = new Tournaments();
 
-$tournamentsList = $Tournaments->getAllByOrganizer($_COOKIE['id']);
+if ($_GET['admin']==1) {
+	$tournamentsList = $Tournaments->getAll($_COOKIE['id']);
+}else {
+	$tournamentsList = $Tournaments->getAllByOrganizer($_COOKIE['id']);
+}
 
 //Other data here
 $OG_data = array(
