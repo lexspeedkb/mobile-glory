@@ -153,6 +153,26 @@ class API{
 		return $lang->$XML_tag;
 	}
 
+	public function addTournament(){
+		$Tournaments = new Tournaments();
+
+		$title		 = $_GET['title'];
+		$places		 = $_GET['places'];
+		$free_places = $_GET['free_places'];
+		$datetime	 = $_GET['datetime'];
+		$game		 = $_GET['game'];
+		$price		 = $_GET['price'];
+		$description		 = $_GET['description'];
+
+		print_r_pre($_GET);
+
+		$organizer = $_COOKIE['id'];
+
+		$Tournaments->add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer);
+
+		echo "0";
+	}
+
 	public function activateUser(){
 		$result = Users::activateUser($_GET['login'], $_GET['key']);
 

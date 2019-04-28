@@ -15,5 +15,13 @@ class Tournaments{
 
 		return $tournamentsList;
 	}
+
+	public function add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer){
+		$SQL = new SQL();
+
+		$SQL->query("INSERT INTO tournaments (title, places, free_places, datetime, game, price, description, organizer, active) VALUES ('$title', '$places', '$free_places', '$datetime', '$game', '$price', '$description', '$organizer', '1')");
+		
+		return 0;
+	}
 }
 ?>

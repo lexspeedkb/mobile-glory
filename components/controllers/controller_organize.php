@@ -2,7 +2,7 @@
 //script here
 $Tournaments = new Tournaments();
 
-$tournamentsList = $Tournaments->getAll();
+$tournamentsList = $Tournaments->getAllByOrganizer($_COOKIE['id']);
 
 //Other data here
 $OG_data = array(
