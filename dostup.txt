@@ -4,5 +4,7 @@ email: mglorytournaments@gmail.com
 pass:  Lexus2001
 
 SQL
-name: mobileglory
+name: mglorytournaments
+log:  mobileglory
 pass: Lexus2001$
+host: mysql.zzz.com.ua

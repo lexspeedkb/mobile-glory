@@ -6,7 +6,7 @@ class Db{
 		if($_SERVER['HTTP_HOST']=="mobile-glory"){
 			$mysqli = new mysqli('127.0.0.1', 'root', '', 'mobile_glory');
 		}elseif($_SERVER['HTTP_HOST']=="mobile-glory.xyz"){
-			$mysqli = new mysqli('mysql.hostinger.ru', 'u358382877_myrm', 'j$?:2TBJcu?jI4OlPA', 'u358382877_myrm');
+			$mysqli = new mysqli('mysql.zzz.com.ua', 'mobileglory', 'Lexus2001$', 'mglorytournaments');
 		}else{
 			$mysqli = new mysqli('127.0.0.1', 'root', '', 'mobile_glory');
 		}
