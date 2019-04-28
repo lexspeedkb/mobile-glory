@@ -1,0 +1,30 @@
+<?xml version='1.0' standalone='yes'?>
+<en>
+  <!-- Вход и регистрация-->
+  <login>login</login>
+  <password>password</password>
+  <repeat_password>repeat password</repeat_password>
+  <entrance>entrance</entrance>
+  <exit>exit</exit>
+  <come_in>come in</come_in>
+  <back>back</back>
+  <registration>registration</registration>
+  <already_registered>already registered?</already_registered>
+  <remember_me>remember me</remember_me>
+  <forget_password>forget password?</forget_password>
+  <incorrect_password>incorrect password</incorrect_password>
+  <user_not_exist>user with this login not exist</user_not_exist>
+  <user_already_exist>login already exist!</user_already_exist>
+  <email_not_active>E-mail not confirmed</email_not_active>
+  <invalid_email>invalid E-mail</invalid_email>
+  <not_all_fields>empty fields</not_all_fields>
+  <empty>empty</empty>
+  <passwords_do_not_match>passwords do not match!</passwords_do_not_match>
+  <email_already_exist>E-mail already exist!</email_already_exist>
+  <full_name>full name</full_name>
+
+  <!-- Главная -->
+  <index_start_project_of_dream>Start project of Your dream now!</index_start_project_of_dream>
+  <index_share_it_with_others>Share it with others</index_share_it_with_others>
+  <index_sign_up_to_get_ready>Sign up [br] to get ready</index_sign_up_to_get_ready>
+</en>

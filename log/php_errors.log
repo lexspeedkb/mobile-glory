@@ -1,0 +1,681 @@
+[29-Aug-2018 10:10:52 UTC] PHP Strict standards:  Non-static method Engine::inputProtection() should not be called statically, assuming $this from incompatible context in /home/ubuntu/workspace/components/classes/class_Users.php on line 21
+[29-Aug-2018 10:10:52 UTC] PHP Stack trace:
+[29-Aug-2018 10:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:10:52 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:10:52 UTC] PHP   3. require() /home/ubuntu/workspace/components/classes/class_Page.php:40
+[29-Aug-2018 10:10:52 UTC] PHP   4. Users->entranceCheck() /home/ubuntu/workspace/components/controllers/controller_login.php:20
+[29-Aug-2018 10:10:52 UTC] PHP Strict standards:  Non-static method Engine::inputProtection() should not be called statically, assuming $this from incompatible context in /home/ubuntu/workspace/components/classes/class_Users.php on line 22
+[29-Aug-2018 10:10:52 UTC] PHP Stack trace:
+[29-Aug-2018 10:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:10:52 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:10:52 UTC] PHP   3. require() /home/ubuntu/workspace/components/classes/class_Page.php:40
+[29-Aug-2018 10:10:52 UTC] PHP   4. Users->entranceCheck() /home/ubuntu/workspace/components/controllers/controller_login.php:20
+[29-Aug-2018 10:10:52 UTC] PHP Strict standards:  Non-static method Engine::crypto() should not be called statically, assuming $this from incompatible context in /home/ubuntu/workspace/components/classes/class_Users.php on line 26
+[29-Aug-2018 10:10:52 UTC] PHP Stack trace:
+[29-Aug-2018 10:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:10:52 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:10:52 UTC] PHP   3. require() /home/ubuntu/workspace/components/classes/class_Page.php:40
+[29-Aug-2018 10:10:52 UTC] PHP   4. Users->entranceCheck() /home/ubuntu/workspace/components/controllers/controller_login.php:20
+[29-Aug-2018 10:11:02 UTC] PHP Strict standards:  Non-static method Engine::inputProtection() should not be called statically, assuming $this from incompatible context in /home/ubuntu/workspace/components/classes/class_Users.php on line 21
+[29-Aug-2018 10:11:02 UTC] PHP Stack trace:
+[29-Aug-2018 10:11:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:11:02 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:11:02 UTC] PHP   3. require() /home/ubuntu/workspace/components/classes/class_Page.php:40
+[29-Aug-2018 10:11:02 UTC] PHP   4. Users->entranceCheck() /home/ubuntu/workspace/components/controllers/controller_login.php:20
+[29-Aug-2018 10:11:02 UTC] PHP Strict standards:  Non-static method Engine::inputProtection() should not be called statically, assuming $this from incompatible context in /home/ubuntu/workspace/components/classes/class_Users.php on line 22
+[29-Aug-2018 10:11:02 UTC] PHP Stack trace:
+[29-Aug-2018 10:11:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:11:02 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:11:02 UTC] PHP   3. require() /home/ubuntu/workspace/components/classes/class_Page.php:40
+[29-Aug-2018 10:11:02 UTC] PHP   4. Users->entranceCheck() /home/ubuntu/workspace/components/controllers/controller_login.php:20
+[29-Aug-2018 10:11:02 UTC] PHP Strict standards:  Non-static method Engine::crypto() should not be called statically, assuming $this from incompatible context in /home/ubuntu/workspace/components/classes/class_Users.php on line 26
+[29-Aug-2018 10:11:02 UTC] PHP Stack trace:
+[29-Aug-2018 10:11:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:11:02 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:11:02 UTC] PHP   3. require() /home/ubuntu/workspace/components/classes/class_Page.php:40
+[29-Aug-2018 10:11:02 UTC] PHP   4. Users->entranceCheck() /home/ubuntu/workspace/components/controllers/controller_login.php:20
+[29-Aug-2018 10:25:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/components/classes/class_Users.php on line 103
+[29-Aug-2018 10:25:49 UTC] PHP Stack trace:
+[29-Aug-2018 10:25:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:25:49 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:25:49 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:25:49 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:07 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/components/classes/class_Users.php on line 103
+[29-Aug-2018 10:26:07 UTC] PHP Stack trace:
+[29-Aug-2018 10:26:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:26:07 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:26:07 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:07 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:10 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/components/classes/class_Users.php on line 103
+[29-Aug-2018 10:26:10 UTC] PHP Stack trace:
+[29-Aug-2018 10:26:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:26:10 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:26:10 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:10 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:10 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/components/classes/class_Users.php on line 103
+[29-Aug-2018 10:26:10 UTC] PHP Stack trace:
+[29-Aug-2018 10:26:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:26:10 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:26:10 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:10 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:13 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/components/classes/class_Users.php on line 103
+[29-Aug-2018 10:26:13 UTC] PHP Stack trace:
+[29-Aug-2018 10:26:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 10:26:13 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 10:26:13 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 10:26:13 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:22
+[29-Aug-2018 11:00:16 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting '(' in /home/ubuntu/workspace/components/classes/class_Page.php on line 69
+[29-Aug-2018 11:00:16 UTC] PHP Stack trace:
+[29-Aug-2018 11:00:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 11:00:16 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 11:00:16 UTC] PHP   3. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 11:00:23 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting '(' in /home/ubuntu/workspace/components/classes/class_Page.php on line 69
+[29-Aug-2018 11:00:23 UTC] PHP Stack trace:
+[29-Aug-2018 11:00:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 11:00:23 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 11:00:23 UTC] PHP   3. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 12:12:03 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting '(' in /home/ubuntu/workspace/components/classes/class_Page.php on line 69
+[29-Aug-2018 12:12:03 UTC] PHP Stack trace:
+[29-Aug-2018 12:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:12:03 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 12:12:03 UTC] PHP   3. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 12:20:11 UTC] PHP Fatal error:  Call to a member function getDataByID() on a non-object in /home/ubuntu/workspace/components/classes/class_Users.php on line 140
+[29-Aug-2018 12:20:11 UTC] PHP Stack trace:
+[29-Aug-2018 12:20:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:20:11 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 12:20:11 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[29-Aug-2018 12:20:52 UTC] PHP Warning:  require(/home/ubuntu/workspace/components/controllers/controller_AS.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/components/classes/class_Page.php on line 34
+[29-Aug-2018 12:20:52 UTC] PHP Stack trace:
+[29-Aug-2018 12:20:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:20:52 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 12:20:52 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/components/controllers/controller_AS.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/components/classes/class_Page.php on line 34
+[29-Aug-2018 12:20:52 UTC] PHP Stack trace:
+[29-Aug-2018 12:20:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:20:52 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 12:24:43 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/components/classes/class_Page.php on line 34
+[29-Aug-2018 12:24:43 UTC] PHP Stack trace:
+[29-Aug-2018 12:24:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:24:43 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 12:24:43 UTC] PHP   3. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:13
+[29-Aug-2018 12:25:04 UTC] PHP Warning:  require(/home/ubuntu/workspace/templates/AS.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/components/classes/class_Templates.php on line 24
+[29-Aug-2018 12:25:04 UTC] PHP Stack trace:
+[29-Aug-2018 12:25:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:25:04 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 12:25:04 UTC] PHP   3. Templates->render() /home/ubuntu/workspace/components/classes/class_Page.php:42
+[29-Aug-2018 12:25:04 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/templates/AS.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/components/classes/class_Templates.php on line 24
+[29-Aug-2018 12:25:04 UTC] PHP Stack trace:
+[29-Aug-2018 12:25:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:25:04 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 12:25:04 UTC] PHP   3. Templates->render() /home/ubuntu/workspace/components/classes/class_Page.php:42
+[29-Aug-2018 12:44:44 UTC] PHP Fatal error:  Call to a member function currentLoginCheck() on a non-object in /home/ubuntu/workspace/components/classes/class_Page.php on line 74
+[29-Aug-2018 12:44:44 UTC] PHP Stack trace:
+[29-Aug-2018 12:44:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 12:44:44 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 12:44:44 UTC] PHP   3. Page->router() /home/ubuntu/workspace/components/classes/class_Page.php:24
+[29-Aug-2018 14:03:29 UTC] PHP Fatal error:  Call to a member function currentLoginCheck() on a non-object in /home/ubuntu/workspace/components/classes/class_Page.php on line 74
+[29-Aug-2018 14:03:29 UTC] PHP Stack trace:
+[29-Aug-2018 14:03:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 14:03:29 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 14:03:29 UTC] PHP   3. Page->router() /home/ubuntu/workspace/components/classes/class_Page.php:24
+[29-Aug-2018 14:09:48 UTC] PHP Fatal error:  Call to a member function currentLoginCheck() on a non-object in /home/ubuntu/workspace/components/classes/class_Page.php on line 74
+[29-Aug-2018 14:09:48 UTC] PHP Stack trace:
+[29-Aug-2018 14:09:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 14:09:48 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 14:09:48 UTC] PHP   3. Page->router() /home/ubuntu/workspace/components/classes/class_Page.php:24
+[29-Aug-2018 14:10:03 UTC] PHP Fatal error:  Call to a member function currentLoginCheck() on a non-object in /home/ubuntu/workspace/components/classes/class_Page.php on line 74
+[29-Aug-2018 14:10:03 UTC] PHP Stack trace:
+[29-Aug-2018 14:10:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 14:10:03 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:14
+[29-Aug-2018 14:10:03 UTC] PHP   3. Page->router() /home/ubuntu/workspace/components/classes/class_Page.php:24
+[29-Aug-2018 20:40:52 UTC] PHP Warning:  md5_file(php-5.3.0alpha2-Win32-VC9-x64.zip): failed to open stream: No such file or directory in /home/ubuntu/workspace/index.php on line 4
+[29-Aug-2018 20:40:52 UTC] PHP Stack trace:
+[29-Aug-2018 20:40:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 20:40:52 UTC] PHP   2. md5_file() /home/ubuntu/workspace/index.php:4
+[29-Aug-2018 20:41:59 UTC] PHP Warning:  md5_file(/files/images/userProfiles/1.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/index.php on line 4
+[29-Aug-2018 20:41:59 UTC] PHP Stack trace:
+[29-Aug-2018 20:41:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 20:41:59 UTC] PHP   2. md5_file() /home/ubuntu/workspace/index.php:4
+[29-Aug-2018 20:46:45 UTC] PHP Warning:  md5_file(/home/ubuntu/workspace/files/images/userProfiles/1.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/index.php on line 8
+[29-Aug-2018 20:46:45 UTC] PHP Stack trace:
+[29-Aug-2018 20:46:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[29-Aug-2018 20:46:45 UTC] PHP   2. md5_file() /home/ubuntu/workspace/index.php:8
+[30-Aug-2018 06:52:46 UTC] PHP Parse error:  syntax error, unexpected 'от' (T_STRING) in /home/ubuntu/workspace/index.php on line 5
+[30-Aug-2018 07:11:04 UTC] PHP Warning:  Missing argument 1 for SMTP::Connect(), called in /home/ubuntu/workspace/components/classes/class_Page.php on line 24 and defined in /home/ubuntu/workspace/components/classes/class_SMTP.php on line 112
+[30-Aug-2018 07:11:04 UTC] PHP Stack trace:
+[30-Aug-2018 07:11:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:11:04 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:11:04 UTC] PHP   3. SMTP->Connect() /home/ubuntu/workspace/components/classes/class_Page.php:24
+[30-Aug-2018 07:11:27 UTC] PHP Warning:  Missing argument 1 for SMTP::Connect(), called in /home/ubuntu/workspace/components/classes/class_Page.php on line 24 and defined in /home/ubuntu/workspace/components/classes/class_SMTP.php on line 112
+[30-Aug-2018 07:11:27 UTC] PHP Stack trace:
+[30-Aug-2018 07:11:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:11:27 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:11:27 UTC] PHP   3. SMTP->Connect() /home/ubuntu/workspace/components/classes/class_Page.php:24
+[30-Aug-2018 07:11:31 UTC] PHP Warning:  Missing argument 1 for SMTP::Connect(), called in /home/ubuntu/workspace/components/classes/class_Page.php on line 24 and defined in /home/ubuntu/workspace/components/classes/class_SMTP.php on line 112
+[30-Aug-2018 07:11:31 UTC] PHP Stack trace:
+[30-Aug-2018 07:11:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:11:31 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:11:31 UTC] PHP   3. SMTP->Connect() /home/ubuntu/workspace/components/classes/class_Page.php:24
+[30-Aug-2018 07:14:15 UTC] PHP Warning:  fputs() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/components/classes/class_SMTP.php on line 212
+[30-Aug-2018 07:14:15 UTC] PHP Stack trace:
+[30-Aug-2018 07:14:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:14:15 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:14:15 UTC] PHP   3. SMTP->Authenticate() /home/ubuntu/workspace/components/classes/class_Page.php:25
+[30-Aug-2018 07:14:15 UTC] PHP   4. fputs() /home/ubuntu/workspace/components/classes/class_SMTP.php:212
+[30-Aug-2018 07:21:03 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/components/classes/class_PHPMailer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/components/autoloader.php on line 3
+[30-Aug-2018 07:21:03 UTC] PHP Stack trace:
+[30-Aug-2018 07:21:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:21:03 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:21:03 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:23
+[30-Aug-2018 07:21:03 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:23
+[30-Aug-2018 07:21:03 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/components/classes/class_PHPMailer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/components/autoloader.php on line 3
+[30-Aug-2018 07:21:03 UTC] PHP Stack trace:
+[30-Aug-2018 07:21:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:21:03 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:21:03 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:23
+[30-Aug-2018 07:21:03 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:23
+[30-Aug-2018 07:21:18 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/ubuntu/workspace/components/classes/class_Page.php on line 23
+[30-Aug-2018 07:21:18 UTC] PHP Stack trace:
+[30-Aug-2018 07:21:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:21:18 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:22:12 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/ubuntu/workspace/components/classes/class_Page.php on line 23
+[30-Aug-2018 07:22:12 UTC] PHP Stack trace:
+[30-Aug-2018 07:22:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:22:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:22:14 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/ubuntu/workspace/components/classes/class_Page.php on line 23
+[30-Aug-2018 07:22:14 UTC] PHP Stack trace:
+[30-Aug-2018 07:22:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:22:14 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:26:13 UTC] PHP Fatal error:  Class declarations may not be nested in /home/ubuntu/workspace/components/classes/class_Page.php on line 34
+[30-Aug-2018 07:26:13 UTC] PHP Stack trace:
+[30-Aug-2018 07:26:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:26:13 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/index.php:12
+[30-Aug-2018 07:26:13 UTC] PHP   3. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:12
+[30-Aug-2018 07:30:29 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/ubuntu/workspace/components/classes/class_Page.php on line 24
+[30-Aug-2018 07:30:29 UTC] PHP Stack trace:
+[30-Aug-2018 07:30:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:30:29 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:32:58 UTC] PHP Parse error:  syntax error, unexpected '$mail' (T_VARIABLE) in /home/ubuntu/workspace/components/classes/class_Page.php on line 25
+[30-Aug-2018 07:32:58 UTC] PHP Stack trace:
+[30-Aug-2018 07:32:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:32:58 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/index.php:12
+[30-Aug-2018 07:32:58 UTC] PHP   3. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:12
+[30-Aug-2018 07:45:30 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/components/classes/class_PHPMailer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/components/autoloader.php on line 3
+[30-Aug-2018 07:45:30 UTC] PHP Stack trace:
+[30-Aug-2018 07:45:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:45:30 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:45:30 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:25
+[30-Aug-2018 07:45:30 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:25
+[30-Aug-2018 07:45:30 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/components/classes/class_PHPMailer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/components/autoloader.php on line 3
+[30-Aug-2018 07:45:30 UTC] PHP Stack trace:
+[30-Aug-2018 07:45:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 07:45:30 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 07:45:30 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/index.php:25
+[30-Aug-2018 07:45:30 UTC] PHP   4. {closure:/home/ubuntu/workspace/components/autoloader.php:2-4}() /home/ubuntu/workspace/index.php:25
+[30-Aug-2018 08:27:04 UTC] PHP Fatal error:  Call to undefined method Templates::render_header() in /home/ubuntu/workspace/templates/email_confirmation.php on line 69
+[30-Aug-2018 08:27:04 UTC] PHP Stack trace:
+[30-Aug-2018 08:27:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:27:04 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:27:04 UTC] PHP   3. Templates->render() /home/ubuntu/workspace/components/classes/class_Page.php:42
+[30-Aug-2018 08:27:04 UTC] PHP   4. require() /home/ubuntu/workspace/components/classes/class_Templates.php:24
+[30-Aug-2018 08:53:18 UTC] PHP Fatal error:  Call to undefined method Templates::render_header() in /home/ubuntu/workspace/templates/email_confirmation.php on line 69
+[30-Aug-2018 08:53:18 UTC] PHP Stack trace:
+[30-Aug-2018 08:53:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:53:18 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:53:18 UTC] PHP   3. Templates->render() /home/ubuntu/workspace/components/classes/class_Page.php:42
+[30-Aug-2018 08:53:18 UTC] PHP   4. require() /home/ubuntu/workspace/components/classes/class_Templates.php:24
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:54:51 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:308
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:54:51 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:308
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:54:51 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:54:51 UTC] PHP   8. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:54:51 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:54:51 UTC] PHP   8. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:54:51 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:54:51 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:54:51 UTC] PHP   6. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:54:51 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:54:51 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:54:51 UTC] PHP   6. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/components/classes/class_SQL.php:10) in /home/ubuntu/workspace/components/classes/class_Page.php on line 46
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. header() /home/ubuntu/workspace/components/classes/class_Page.php:46
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:54:51 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:202
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:54:51 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:202
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:54:51 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:54:51 UTC] PHP   8. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:54:51 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:54:51 UTC] PHP   8. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:54:51 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:54:51 UTC] PHP Stack trace:
+[30-Aug-2018 08:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:54:51 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:54:51 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:54:51 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:54:51 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:54:51 UTC] PHP   7. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:12 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:308
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:12 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:308
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:12 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:12 UTC] PHP   8. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:12 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:12 UTC] PHP   8. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:12 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:12 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:12 UTC] PHP   6. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:12 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:12 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:12 UTC] PHP   6. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/components/classes/class_SQL.php:10) in /home/ubuntu/workspace/components/classes/class_Page.php on line 46
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. header() /home/ubuntu/workspace/components/classes/class_Page.php:46
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:12 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:202
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:12 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:202
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:12 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:12 UTC] PHP   8. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:12 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:12 UTC] PHP   8. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:56:12 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:56:12 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:12 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:12 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:12 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:12 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:12 UTC] PHP   7. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:34 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:308
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:34 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:308
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:34 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:34 UTC] PHP   8. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:34 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:34 UTC] PHP   8. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->getDataByID() /home/ubuntu/workspace/components/classes/class_Users.php:378
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:310
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:34 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:34 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:34 UTC] PHP   6. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. Users->currentLoginCheck() /home/ubuntu/workspace/components/classes/class_Page.php:27
+[30-Aug-2018 08:56:34 UTC] PHP   4. Users->checkHash() /home/ubuntu/workspace/components/classes/class_Users.php:141
+[30-Aug-2018 08:56:34 UTC] PHP   5. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:382
+[30-Aug-2018 08:56:34 UTC] PHP   6. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/components/classes/class_SQL.php:10) in /home/ubuntu/workspace/components/classes/class_Page.php on line 46
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. header() /home/ubuntu/workspace/components/classes/class_Page.php:46
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:34 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:202
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:34 UTC] PHP   6. Db::getConnection() /home/ubuntu/workspace/components/classes/class_Users.php:202
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'myrm' in /home/ubuntu/workspace/db.php on line 13
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:34 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:34 UTC] PHP   8. mysqli->mysqli() /home/ubuntu/workspace/db.php:13
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/db.php on line 15
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:34 UTC] PHP   7. Db::getConnection() /home/ubuntu/workspace/components/classes/class_SQL.php:4
+[30-Aug-2018 08:56:34 UTC] PHP   8. mysqli->query() /home/ubuntu/workspace/db.php:15
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 10
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli->query() /home/ubuntu/workspace/components/classes/class_SQL.php:10
+[30-Aug-2018 08:56:34 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ubuntu/workspace/components/classes/class_SQL.php on line 43
+[30-Aug-2018 08:56:34 UTC] PHP Stack trace:
+[30-Aug-2018 08:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/index.php:0
+[30-Aug-2018 08:56:34 UTC] PHP   2. Page->getPage() /home/ubuntu/workspace/index.php:13
+[30-Aug-2018 08:56:34 UTC] PHP   3. call_user_func:{/home/ubuntu/workspace/components/classes/class_Page.php:54}() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   4. API->activateUser() /home/ubuntu/workspace/components/classes/class_Page.php:54
+[30-Aug-2018 08:56:34 UTC] PHP   5. Users->activateUser() /home/ubuntu/workspace/components/classes/class_API.php:58
+[30-Aug-2018 08:56:34 UTC] PHP   6. SQL->query() /home/ubuntu/workspace/components/classes/class_Users.php:204
+[30-Aug-2018 08:56:34 UTC] PHP   7. mysqli_error() /home/ubuntu/workspace/components/classes/class_SQL.php:43
+[09-Nov-2018 22:22:37 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\MyRM\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\MyRM\components\classes\class_Users.php on line 317
+[09-Nov-2018 22:22:37 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\MyRM\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\MyRM\components\classes\class_Users.php on line 318
+[09-Nov-2018 22:23:04 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\MyRM\libraries\php\pilipenko.php:16) in D:\OSPanel\domains\MyRM\components\classes\class_Engine.php on line 20

@@ -1,0 +1,64 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php
+
+#admin protect
+RewriteRule ^adminFiles(.*)$ index [L,R=301]
+
+Options +FollowSymLinks
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^site.com
+
+RewriteRule (.*) http://www.site.com/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+
+RewriteRule ^index\.html$ http://www.site.com/ [R=301,L]
+
+#SLASH
+# RewriteCond %{REQUEST_FILENAME} !-f
+
+# RewriteCond %{REQUEST_URI} !(.*)/$
+
+# RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+# RewriteCond %{REQUEST_URI} /+[^\.]+$
+
+# RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+
+#mobile
+#RewriteCond %{HTTP_USER_AGENT} (?i:midp|samsung|nokia|j2me|avant|docomo|novarra|palmos|palmsource|opwv|chtml|pda|mmp|blackberry|mib|symbian|wireless|nokia|hand|mobi|phone|cdm|upb|audio|SIE|SEC|samsung|HTC|mot-|mitsu|sagem|sony|alcatel|lg|eric|vx|NEC|philips|mmm|xx|panasonic|sharp|wap|sch|rover|pocket|benq|java|pt|pg|vox|amoi|bird|compal|kg|voda|sany|kdd|dbt|sendo|sgh|gradi|jb|dddi|moto|iphone|android) [NC] 
+
+#RewriteCond %{HTTP_HOST} site.com
+
+#RewriteRule ^$ http://m.site.com/ [R=302,L]
+
+
+#.htaccess protect
+RewriteRule ^/.htaccess$ - [G]
+
+Options -Indexes
+
+#upload_max_filesize START#
+php_value upload_max_filesize 400M
+#upload_max_filesize END#
+
+#post_max_size START#
+php_value post_max_size 400M
+#post_max_size END#
+
+#memory_limit START#
+php_value memory_limit 400M
+#memory_limit END#
+
+php_value log_errors "On"
+php_value error_log log/php_errors.log

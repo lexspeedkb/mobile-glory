@@ -1,0 +1,22 @@
+<?xml version='1.0' standalone='yes'?>
+<ru>
+  <!-- Вход и регистрация-->
+  <login>Логин</login>
+  <password>Пароль</password>
+  <entrance>Вход</entrance>
+  <come_in>Войти</come_in>
+  <registration>Регистрация</registration>
+  <already_registered>Уже зарегистрированы?</already_registered>
+  <anothers_pc>Чужой компьютер</anothers_pc>
+  <forget_password>Забыли пароль?</forget_password>
+  <incorrect_password>Неверный пароль</incorrect_password>
+  <user_not_exist>Пользователя с таким логином или E-mail не существует</user_not_exist>
+  <email_not_active>E-mail не подтверждён</email_not_active>
+  <not_all_fields>Заполнены не все поля</not_all_fields>
+  <passwords_do_not_match>Пароли не совпадают!</passwords_do_not_match>
+
+  <!-- Главная -->
+  <index_start_project_of_dream>Начни проект своей мечты прямо сейчас!</index_start_project_of_dream>
+  <index_share_it_with_others>Расскажи всем о нём!</index_share_it_with_others>
+  <index_sign_up_to_get_ready>Зарегистрируйтесь для начала</index_sign_up_to_get_ready>
+</ru>
