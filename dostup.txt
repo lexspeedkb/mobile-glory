@@ -1,0 +1,4 @@
+zzz.com.ua
+login: mglorytournaments
+email: mglorytournaments@gmail.com
+pass:  Lexus2001
