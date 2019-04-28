@@ -1,18 +1,26 @@
 <div class="card-container">
-  <div class="card-wide mdl-card mdl-shadow--2dp">
-    <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">Kill Challange</h2>
+  <?php foreach ($data['tournaments'] as $tournament): ?>
+    <div class="card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">#<?=$tournament['id']?> <?=$tournament['title']?></h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <span>Организатор: <?=$tournament['organizer']?></span>
+        <br>
+        <span>Участие: <?=$tournament['price']?>Рублей</span>
+        <br>
+        <span>Свободно мест: <?=$tournament['places']?>/<?=$tournament['free_places']?></span>
+        <br>
+        <span>Дата и время: <?=$tournament['datetime']?></span>
+        <br>
+        <br>
+        Краткое описание турнира
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Подать заявку
+        </a>
+      </div>
     </div>
-    <div class="mdl-card__supporting-text">
-      <p>Организатор: Masters_pubg_mobile</p>
-      <p>Участие: 100гривен</p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Mauris sagittis pellentesque lacus eleifend lacinia...
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        Подать заявку
-      </a>
-    </div>
-  </div>
+  <?php endforeach ?>
 </div>

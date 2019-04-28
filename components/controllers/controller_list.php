@@ -1,6 +1,8 @@
 <?php
 //script here
+$Tournaments = new Tournaments();
 
+$tournamentsList = $Tournaments->getAll();
 
 //Other data here
 $OG_data = array(
@@ -20,7 +22,7 @@ $META_data = array(
 
 
 // Assignment values to $data array 
-
+$data['tournaments'] = $tournamentsList;
 
 // Assignment other data to $OTHER_data array 
 $OTHER_data['OG'] 	= $OG_data;

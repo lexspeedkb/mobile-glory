@@ -10,7 +10,7 @@ class Db{
 		}elseif($_SERVER['HTTP_HOST']=="myrm-lexspeedkb.c9users.io"){
 			$mysqli = new mysqli('localhost', 'lexspeedkb', '', 'c9');
 		}else{
-			$mysqli = new mysqli('127.0.0.1', 'root', '', 'myrm');
+			$mysqli = new mysqli('127.0.0.1', 'root', '', 'mobile_glory');
 		}
 		$mysqli->query( "SET CHARSET utf8" );
 		if (mysqli_connect_errno()) {

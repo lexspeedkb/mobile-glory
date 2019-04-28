@@ -11,7 +11,7 @@
 	<meta name="description" content="<?=$template['head']['meta']['description']?>">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#125eba">
+	<meta name="theme-color" content="#3f51b5">
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
