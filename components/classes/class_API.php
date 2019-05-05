@@ -219,8 +219,14 @@ class API{
 		}
 	}
 
-	public function getAllUsers(){
+	public function banUser(){
 		$this->admin();
+
+		$Users = new Users();
+
+		$Users->banUser();
+
+		return 0;
 	}
 
 }

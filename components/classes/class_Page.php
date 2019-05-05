@@ -33,22 +33,38 @@ class Page extends SQL{
 		// Is API
 		$pos = strripos($pageName, "[api]");
 		if($pos === false){
-			//Require controller file. If controller don't exists - abort
-			if(!empty($pageName)){
-				if(file_exists(ROOT.'/components/controllers/controller_'.$pageName.'.php')){
-					require ROOT.'/components/controllers/controller_'.$pageName.'.php';
-				}else{
-					$Engine->error_404();
+			if ($pieces[1] != 'admin') {
+				//Require controller file. If controller don't exists - abort
+				if(!empty($pageName)){
+					if(file_exists(ROOT.'/components/controllers/controller_'.$pageName.'.php')){
+						require ROOT.'/components/controllers/controller_'.$pageName.'.php';
+					}else{
+						$Engine->error_404();
+					}
 				}
-			}
-			//Render page
-			$Templates = new Templates();
+				//Render page
+				$Templates = new Templates();
 
-			//Different includes for index and portal
-			if ($pageName == "index") {
-				$Templates->render($pageName, $data, $OTHER_data, $lang, true);
-			}else {
-				$Templates->render($pageName, $data, $OTHER_data, $lang);
+				//Different includes for index and portal
+				if ($pageName == "index") {
+					$Templates->render($pageName, $data, $OTHER_data, $lang, true);
+				}else {
+					$Templates->render($pageName, $data, $OTHER_data, $lang);
+				}
+			} else {
+				//Require controller file. If controller don't exists - abort
+				if(!empty($pageName)){
+					if(file_exists(ROOT.'/components/controllers/admin/controller_'.$pageName.'.php')){
+						require ROOT.'/components/controllers/admin/controller_'.$pageName.'.php';
+					}else{
+						echo ROOT.'/components/controllers/admin/controller_'.$pageName.'.php';
+						$Engine->error_404();
+					}
+				}
+				//Render page
+				$Templates = new Templates();
+
+				$Templates->render('admin/'.$pageName, $data, $OTHER_data, $lang);
 			}
 		}else{
 			//API
@@ -97,6 +113,9 @@ class Page extends SQL{
 		}elseif($pieces[1]=="admin" && $pieces[2]=="api"){
 			//API
 			return "[api]_".$pieces[3];
+		}elseif($pieces[1]=="admin" && $pieces[2]!="api"){
+			//API
+			return $pieces[2];
 		}else{
 			return $pieces[1];
 		}

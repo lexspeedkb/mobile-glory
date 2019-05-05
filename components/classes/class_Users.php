@@ -3,6 +3,14 @@
  * 
  */
 class Users{
+
+	public function getAllUsers(){
+		$SQL = new SQL();
+
+		$result = $SQL->query("SELECT * FROM `users`");
+		
+		return $result;
+	}
 	
 	/**
 	 * @param (var)$login 	 - login or email of user
@@ -409,10 +417,15 @@ class Users{
 			$time = date("Y-m-d H:i:s");
 
 			$SQL->query("UPDATE `session` SET date_time='$time' WHERE user_id = '$id' AND hash = '$hash'");
+			$SQL->query("UPDATE `users` SET date_last_seen='$time' WHERE id = '$id'");
 			return true;
 		}
 
 
-	}	
+	}
+
+	public function banUser($id){
+		
+	}
 }
 ?>
