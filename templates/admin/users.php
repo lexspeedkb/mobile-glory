@@ -43,37 +43,16 @@
 
 <script>
 $(document).ready(function() {
-    $('body').on('click', '#ban', function() {
-      var tour_id = $(this).attr("user_id");
+  $('body').on('click', '#ban', function() {
+    var user_id = $(this).attr("user_id");
 
-      $.ajax({
-        url: '/admin/api/banUser',
-        data: {id: inp_id, title: inp_title, places: inp_places, free_places: inp_free_places, datetime: inp_datetime, game: inp_game, price: inp_price, description: inp_description},
-        success: function(){
-          location.reload();
-        }
-      });
+    $.ajax({
+      url: '/admin/api/banUser',
+      data: {user_id_send: user_id},
+      success: function(){
+        location.reload();
+      }
     });
-
-    $('body').on('click', '#editTournament', function() {
-      var tour_id         = $(this).attr("tour_id");
-      var inp_id          = $('#inp_id').val();
-      var inp_title       = $('#inp_title').val();
-      var inp_description = $('#inp_description').val();
-      var inp_places      = $('#inp_places').val();
-      var inp_free_places = $('#inp_free_places').val();
-      var inp_datetime    = $('#inp_datetime').val();
-      var inp_game        = $('#inp_game').val();
-      var inp_price       = $('#inp_price').val();
-
-      $.ajax({
-        url: '/api/editTournament',
-        data: {id: inp_id, title: inp_title, places: inp_places, free_places: inp_free_places, datetime: inp_datetime, game: inp_game, price: inp_price, description: inp_description},
-        success: function(){
-          location.reload();
-        }
-      });
-    });
-
   });
+});
 </script>
