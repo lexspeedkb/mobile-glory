@@ -3,7 +3,7 @@ class Tournaments{
 	public function getAll(){
 		$SQL = new SQL();
 
-		$tournamentsList = $SQL->query("SELECT * FROM tournaments");
+		$tournamentsList = $SQL->query("SELECT * FROM tournaments", true);
 
 		return $tournamentsList;
 	}
@@ -11,7 +11,7 @@ class Tournaments{
 	public function getAllByOrganizer($organizer_id){
 		$SQL = new SQL();
 
-		$tournamentsList = $SQL->query("SELECT * FROM tournaments WHERE organizer='$organizer_id'");
+		$tournamentsList = $SQL->query("SELECT * FROM tournaments WHERE organizer='$organizer_id'", true);
 
 		return $tournamentsList;
 	}

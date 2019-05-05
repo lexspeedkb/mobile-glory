@@ -25,6 +25,18 @@
   .preloaderBlock h2 {
     font-weight: 100; }
 
+.add-tournament {
+  width: 90%;
+  max-width: 900px; }
+
+th {
+  text-align: left !important; }
+
+.addTournament_fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
 .card-container {
   width: 100%; }
   .card-container .card-wide {
