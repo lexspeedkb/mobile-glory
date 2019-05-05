@@ -26,6 +26,10 @@ class Page extends SQL{
 		
 		$data['MyAccount'] = $Users->currentLoginCheck();
 
+		if ($data['MyAccount']['admin']!='1' && $pieces[1]=='admin') {
+			die('NOT ADMIN!!!');
+		}
+
 		// Is API
 		$pos = strripos($pageName, "[api]");
 		if($pos === false){
@@ -90,18 +94,9 @@ class Page extends SQL{
 		}elseif($pieces[1]=="api"){
 			//API
 			return "[api]_".$pieces[2];
-		}elseif($pieces[1]=="scripts"){
-			//get admin scripts //Получение скриптов-обработчиков администраторской панели
-			if($pieces[2]==""){
-				$Engine->error_404();
-			}else{
-				//if page exist, include it //если страница существует - то подключаем её
-				if(file_exists(ROOT.'/scripts/'.$pieces[2].'.php')){
-					include ROOT.'/scripts/'.$pieces[2].'.php';
-				}else{
-					$Engine->error_404();
-				}
-			}
+		}elseif($pieces[1]=="admin" && $pieces[2]=="api"){
+			//API
+			return "[api]_".$pieces[3];
 		}else{
 			return $pieces[1];
 		}
@@ -137,29 +132,4 @@ class Page extends SQL{
 		return $API_methodName;
 	}
 }
-// elseif($pieces[1]=="admin"){
-// 			//admin pages //страницы администраторской панели
-// 			//admin validation //Валидация администратов
-// 			Admin::isAdmin();
-// 			if($pieces[2]==""){
-// 				//get admin index //Получение главной администраторской страницы
-// 				include ROOT.'/adminFiles/index.php';
-// 			}elseif($pieces[2]=="adminScripts"){
-// 				//get admin scripts //Получение скриптов-обработчиков администраторской панели
-// 				if($pieces[3]==""){
-// 					Engine::error_404();
-// 				}else{
-// 					//if page exist, include it //если страница существует - то подключаем её
-// 					if(file_exists(ROOT.'/adminFiles/adminScripts/'.$pieces[3].'.php')){
-// 						include ROOT.'/adminFiles/adminScripts/'.$pieces[3].'.php';
-// 					}else{
-// 						Engine::error_404();
-// 					}
-// 				}
-// 			}else{
-// 				//get admin pages //Получение администраторских страниц
-// 				include ROOT.'/adminFiles/'.$pieces[2].'.php';
-// 			}
-
-// 		}
 ?>

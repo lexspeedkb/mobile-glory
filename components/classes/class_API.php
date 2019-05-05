@@ -210,5 +210,18 @@ class API{
 		}
 	}
 
+	// ADMIN SCRIPTS
+
+	public function admin(){
+		$pieces = explode("/", $_SERVER['REQUEST_URI']);
+		if ($pieces[1]!='admin') {
+			die('NOT ADMIN CALL FOR ADMIN API!!!');
+		}
+	}
+
+	public function getAllUsers(){
+		$this->admin();
+	}
+
 }
 ?>
