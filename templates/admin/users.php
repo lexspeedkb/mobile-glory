@@ -16,18 +16,26 @@
         <tr>
           <td class="mdl-data-table__cell--non-numeric"><?=$user['id']?></td>
           <td class="mdl-data-table__cell--non-numeric">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="ban" user_id="<?=$user['id']?>">
-              Бан
-            </button>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="set_organize" user_id="<?=$user['id']?>">
-              Организатор
-            </button>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="de_ban" user_id="<?=$user['id']?>">
-              Разбан
-            </button>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="de_set_organize" user_id="<?=$user['id']?>">
-              Не организатор
-            </button>
+            <?php if ($user['organizer']=='0'): ?>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="set_organize" user_id="<?=$user['id']?>">
+                Организатор
+              </button>
+            <?php else: ?>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="de_set_organize" user_id="<?=$user['id']?>">
+                Не организатор
+              </button>
+            <?php endif ?>
+            <?php if ($user['active']=='0'): ?>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="de_ban" user_id="<?=$user['id']?>">
+                Разбан
+              </button>
+            <?php else: ?>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="ban" user_id="<?=$user['id']?>">
+                Бан
+              </button>
+            <?php endif ?>
+            
+            
             
           </td>
           <td class="mdl-data-table__cell--non-numeric"><?=$user['login']?></td>
