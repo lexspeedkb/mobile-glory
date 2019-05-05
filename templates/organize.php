@@ -23,7 +23,7 @@
           ?>
           <tr>
             <td class="mdl-data-table__cell--non-numeric"><?=$tournament['id']?></td>
-            <td>
+            <td class="mdl-data-table__cell--non-numeric">
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent delete" tour_id="<?=$tournament['id']?>">
                 Удалить
               </button>

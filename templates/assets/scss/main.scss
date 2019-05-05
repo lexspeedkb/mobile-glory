@@ -47,6 +47,10 @@ th {
   text-align: left !important;
 }
 
+tr:nth-child(2n) {
+  background: #DDD;
+}
+
 .addTournament_fab {
   position: fixed;
   bottom: 20px;
