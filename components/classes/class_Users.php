@@ -430,5 +430,11 @@ class Users{
 		$SQL->query("UPDATE `session` SET hash='' WHERE user_id = '$id'");
 		$SQL->query("UPDATE `users` SET active='0' WHERE id = '$id'");
 	}
+
+	public function de_banUser($id){
+		$SQL = new SQL();
+
+		$SQL->query("UPDATE `users` SET active='1' WHERE id = '$id'");
+	}
 }
 ?>

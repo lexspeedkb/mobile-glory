@@ -231,5 +231,17 @@ class API{
 		return 0;
 	}
 
+	public function de_banUser(){
+		$this->admin();
+
+		$Users = new Users();
+
+		$id = $_GET['user_id_send'];
+
+		$Users->de_banUser($id);
+
+		return 0;
+	}
+
 }
 ?>

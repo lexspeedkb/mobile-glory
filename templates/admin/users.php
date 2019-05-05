@@ -19,13 +19,13 @@
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="ban" user_id="<?=$user['id']?>">
               Бан
             </button>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="set_organize" user_id="<?=$user['id']?>" title="<?=$tournament['title']?>" places="<?=$tournament['places']?>" free_places="<?=$tournament['free_places']?>" game="<?=$tournament['game']?>" description="<?=$tournament['description']?>" datetime="<?=$tournament['datetime_local']?>" price="<?=$tournament['price']?>">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="set_organize" user_id="<?=$user['id']?>">
               Организатор
             </button>
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="de_ban" user_id="<?=$user['id']?>">
               Разбан
             </button>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="de_set_organize" user_id="<?=$user['id']?>" title="<?=$tournament['title']?>" places="<?=$tournament['places']?>" free_places="<?=$tournament['free_places']?>" game="<?=$tournament['game']?>" description="<?=$tournament['description']?>" datetime="<?=$tournament['datetime_local']?>" price="<?=$tournament['price']?>">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="de_set_organize" user_id="<?=$user['id']?>">
               Не организатор
             </button>
             
@@ -48,6 +48,17 @@ $(document).ready(function() {
 
     $.ajax({
       url: '/admin/api/banUser',
+      data: {user_id_send: user_id},
+      success: function(){
+        location.reload();
+      }
+    });
+  });
+  $('body').on('click', '#de_ban', function() {
+    var user_id = $(this).attr("user_id");
+
+    $.ajax({
+      url: '/admin/api/de_banUser',
       data: {user_id_send: user_id},
       success: function(){
         location.reload();
