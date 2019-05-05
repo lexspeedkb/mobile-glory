@@ -224,7 +224,9 @@ class API{
 
 		$Users = new Users();
 
-		$Users->banUser();
+		$id = $_GET['user_id_send'];
+
+		$Users->banUser($id);
 
 		return 0;
 	}
