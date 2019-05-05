@@ -8,6 +8,8 @@ if ($_GET['admin']==1) {
 	$tournamentsList = $Tournaments->getAllByOrganizer($_COOKIE['id']);
 }
 
+$datetimeNow = datetime_local(date("Y-m-d H:i:s"));
+
 //Other data here
 $OG_data = array(
 	'type' 			=> 'article',
@@ -27,7 +29,8 @@ $META_data = array(
 
 
 // Assignment values to $data array 
-$data['tournaments'] = $tournamentsList;
+$data['tournamentsList'] = $tournamentsList;
+$data['datetimeNow'] = $datetimeNow;
 
 // Assignment other data to $OTHER_data array 
 $OTHER_data['OG'] 	= $OG_data;

@@ -281,4 +281,11 @@ function isInStr($findme, $mystring){
 	    return true;
 	}
 }
+
+// For datetime-local input
+// example: 1996-12-19T16:39:57
+function datetime_local($datetime){
+	$datetime = str_replace(" ", "T", $datetime);
+	return $datetime;
+}
 ?>

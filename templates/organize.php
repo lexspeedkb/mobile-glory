@@ -1,5 +1,5 @@
 <div style=" overflow-x: auto;">
-  <?php if (!empty($data['tournaments'])): ?>
+  <?php if (!empty($data['tournamentsList'])): ?>
     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%;">
       <thead>
         <tr>
@@ -13,14 +13,17 @@
         </tr>
       </thead>
       <tbody>
-        <?php foreach ($data['tournaments'] as $tournament): ?>
+        <?php foreach ($data['tournamentsList'] as $tournament): ?>
+          <?php
+          $tournament['datetime_local'] = datetime_local($tournament['datetime']);
+          ?>
           <tr>
             <td class="mdl-data-table__cell--non-numeric"><?=$tournament['id']?></td>
             <td>
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent delete" tour_id="<?=$tournament['id']?>">
                 Удалить
               </button>
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored edit" tour_id="<?=$tournament['id']?>" title="<?=$tournament['title']?>" places="<?=$tournament['places']?>" free_places="<?=$tournament['free_places']?>" game="<?=$tournament['game']?>" description="<?=$tournament['description']?>" datetime="<?=$tournament['datetime']?>" price="<?=$tournament['price']?>">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored edit" tour_id="<?=$tournament['id']?>" title="<?=$tournament['title']?>" places="<?=$tournament['places']?>" free_places="<?=$tournament['free_places']?>" game="<?=$tournament['game']?>" description="<?=$tournament['description']?>" datetime="<?=$tournament['datetime_local']?>" price="<?=$tournament['price']?>">
                 Редактировать
               </button>
             </td>
@@ -34,23 +37,75 @@
       </tbody>
     </table>
   <?php else: ?>
-    <h2 align="center">Тут пока ничего нет) Создайте свой первый турнир!</h2>
+    <h3 align="center">Тут пока ничего нет) Создайте свой первый турнир!</h3>
   <?php endif ?>
 </div>
-<br>
-<br>
-<input type="hidden"   id="inp_id" placeholder="Название турнира"><br>
-<input type="text"   id="inp_title" placeholder="Название турнира"><br>
-<textarea id="inp_description" cols="30" rows="10" placeholder="Описание"></textarea><br>
-<input type="number" id="inp_places" placeholder="Всего мест"><br>
-<input type="number" id="inp_free_places" placeholder="свободных мест"><br>
-<input type="datetime-local"   id="inp_datetime" ><br>
-<input type="text"   id="inp_game" placeholder="Игра"><br>
-<input type="number"   id="inp_price" placeholder="Цена участия РУБ"><br>
-<button id="addTournament">Создать турнир</button>
-<button id="editTournament" style="display: none">Редактировать турнир</button>
-<br>
-<br>
+
+<div class="card-container">
+<div class="card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Создать турнир</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <input type="hidden" id="inp_id"><br>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="inp_title">
+          <label class="mdl-textfield__label" for="inp_title">Название турнира</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield">
+          <textarea class="mdl-textfield__input" type="text" cols="30" rows="10" rows= "3" id="inp_description"></textarea>
+          <label class="mdl-textfield__label" for="inp_description">Описание</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inp_places">
+          <label class="mdl-textfield__label" for="inp_places">Всего мест</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inp_free_places">
+          <label class="mdl-textfield__label" for="inp_free_places">Свободных мест</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="datetime-local" id="inp_datetime" value="<?=$data['datetimeNow']?>">
+          <label class="mdl-textfield__label" for="inp_datetime">Дата проведения</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <select class="mdl-textfield__input" id="inp_game">
+            <option value="1">PUBG Mobile</option>
+          </select>
+          <label class="mdl-textfield__label" for="inp_game">Игра</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="inp_price">
+          <label class="mdl-textfield__label" for="inp_price">Цена участия РУБ</label>
+        </div>
+
+        <!-- <input type="text"   id="inp_title" placeholder="Название турнира"><br> -->
+        <!-- <textarea id="inp_description" cols="30" rows="10" placeholder="Описание"></textarea><br> -->
+        <!-- <input type="number" id="inp_places" placeholder="Всего мест"><br> -->
+        <!-- <input type="number" id="inp_free_places" placeholder="свободных мест"><br> -->
+        <!-- <input type="datetime-local"   id="inp_datetime" ><br> -->
+        <!-- <input type="text"   id="inp_game" placeholder="Игра"><br> -->
+        <!-- <input type="number"   id="inp_price" placeholder="Цена участия РУБ"><br> -->
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="<?=$organizator['link']?>" id="addTournament">
+          Создать турнир
+        </a>
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="<?=$organizator['link']?>" id="editTournament" style="display: none">
+          Редактировать турнир
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 <script>
   $(document).ready(function() {
     $('body').on('click', '#addTournament', function() {
