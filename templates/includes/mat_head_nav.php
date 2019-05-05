@@ -3,7 +3,7 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title"><?=SITE_NAME?></span>
+      <span class="mdl-layout-title"><?=$template['head']['META']['page_name']?></span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->

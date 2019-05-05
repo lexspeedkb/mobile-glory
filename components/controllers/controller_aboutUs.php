@@ -14,6 +14,7 @@ $OG_data = array(
 
 $META_data = array(
 	'title' 		=> SITE_NAME." - Главная",
+	'page_name'		=> 'О нас',
 	'keywords'		=> "MyRM, my real motivation",
 	'description'	=> 'бла бла',
 );

@@ -1,6 +1,6 @@
 <?php
 class SQL{
-	public function query($sql){
+	public function query($sql, $getMulti=false){
 		$mysqli = Db::getConnection();
 
 		$action = explode(' ', $sql);
@@ -23,9 +23,24 @@ class SQL{
 					++$q;
 				}
 			}else{
-				//Select of one row
-				if($result!=""){
-					$return = $result->fetch_array(MYSQLI_ASSOC);
+				if($getMulti){
+					$q=0;
+					while ($row = $result->fetch_array()) {
+						$i=0;
+						foreach($row as $key => $value){
+							if($i%2==1){
+								$return[$q][$key] = $value;
+							}
+							++$i;
+
+						}
+						++$q;
+					}
+				}else{
+					//Select of one row
+					if($result!=""){
+						$return = $result->fetch_array(MYSQLI_ASSOC);
+					}
 				}
 			}
 		}elseif($action[0]=='INSERT'){

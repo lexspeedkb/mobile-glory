@@ -736,3 +736,27 @@ Stack trace:
 [28-Apr-2019 22:30:31 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\organize.php on line 12
 [28-Apr-2019 22:55:31 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\OSPanel\domains\mobile-glory\components\classes\class_Tournaments.php on line 23
 [28-Apr-2019 23:01:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$SQL' (T_VARIABLE) in D:\OSPanel\domains\mobile-glory\components\classes\class_Tournaments.php on line 22
+[05-May-2019 18:34:04 Europe/Moscow] PHP Warning:  mysqli::__construct(): (HY000/2002): ��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+ in D:\OSPanel\domains\mobile-glory\db.php on line 7
+[05-May-2019 18:34:04 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\db.php on line 13
+[05-May-2019 18:34:05 Europe/Moscow] PHP Warning:  mysqli::__construct(): (HY000/2002): ��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+ in D:\OSPanel\domains\mobile-glory\db.php on line 7
+[05-May-2019 18:34:05 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\db.php on line 13
+[05-May-2019 18:34:05 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\components\classes\class_SQL.php on line 10
+[05-May-2019 18:34:05 Europe/Moscow] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\components\classes\class_SQL.php on line 43
+[05-May-2019 18:34:06 Europe/Moscow] PHP Warning:  mysqli::__construct(): (HY000/2002): ��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+ in D:\OSPanel\domains\mobile-glory\db.php on line 7
+[05-May-2019 18:34:06 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\db.php on line 13
+[05-May-2019 18:34:06 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\components\classes\class_SQL.php on line 10
+[05-May-2019 18:34:06 Europe/Moscow] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\components\classes\class_SQL.php on line 43
+[05-May-2019 18:34:06 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\db.php:7) in D:\OSPanel\domains\mobile-glory\components\classes\class_Users.php on line 318
+[05-May-2019 18:34:06 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\mobile-glory\db.php:7) in D:\OSPanel\domains\mobile-glory\components\classes\class_Users.php on line 319
+[05-May-2019 18:34:07 Europe/Moscow] PHP Warning:  mysqli::__construct(): (HY000/2002): ��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+ in D:\OSPanel\domains\mobile-glory\db.php on line 7
+[05-May-2019 18:34:07 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\db.php on line 13
+[05-May-2019 18:34:07 Europe/Moscow] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\components\classes\class_SQL.php on line 10
+[05-May-2019 18:34:07 Europe/Moscow] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in D:\OSPanel\domains\mobile-glory\components\classes\class_SQL.php on line 43
+[05-May-2019 18:34:07 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\organize.php on line 15
+[05-May-2019 18:36:36 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\organize.php on line 15
+[05-May-2019 18:58:22 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\organize.php on line 15
+[05-May-2019 19:08:16 Europe/Moscow] PHP Warning:  Missing argument 3 for Templates::render_mat_head_nav(), called in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 32 and defined in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 71

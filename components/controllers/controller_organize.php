@@ -20,6 +20,7 @@ $OG_data = array(
 
 $META_data = array(
 	'title' 		=> SITE_NAME." - Главная",
+	'page_name'		=> 'Организация',
 	'keywords'		=> "Mobile Glory",
 	'description'	=> 'Лучшие турниры по мобильным играм. Присоединяйся, и учавствуй в турнирах по PUBG Mobile, и другим онлайн-играм',
 );

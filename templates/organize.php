@@ -1,37 +1,41 @@
 <div style=" overflow-x: auto;">
-  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%;">
-    <thead>
-      <tr>
-        <th class="mdl-data-table__cell--non-numeric">#</th>
-        <th>Действие</th>
-        <th>Заголовок</th>
-        <th>Мест всего/свободных</th>
-        <th>Дата</th>
-        <th>Игра</th>
-        <th>Цена</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php foreach ($data['tournaments'] as $tournament): ?>
+  <?php if (!empty($data['tournaments'])): ?>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%;">
+      <thead>
         <tr>
-          <td class="mdl-data-table__cell--non-numeric"><?=$tournament['id']?></td>
-          <td>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent delete" tour_id="<?=$tournament['id']?>">
-              Удалить
-            </button>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored edit" tour_id="<?=$tournament['id']?>" title="<?=$tournament['title']?>" places="<?=$tournament['places']?>" free_places="<?=$tournament['free_places']?>" game="<?=$tournament['game']?>" description="<?=$tournament['description']?>" datetime="<?=$tournament['datetime']?>" price="<?=$tournament['price']?>">
-              Редактировать
-            </button>
-          </td>
-          <td><?=$tournament['title']?></td>
-          <td><?=$tournament['places']?>/<?=$tournament['free_places']?></td>
-          <td><?=$tournament['datetime']?></td>
-          <td><?=$tournament['game']?></td>
-          <td><?=$tournament['price']?></td>
+          <th class="mdl-data-table__cell--non-numeric">#</th>
+          <th>Действие</th>
+          <th>Заголовок</th>
+          <th>Мест всего/свободных</th>
+          <th>Дата</th>
+          <th>Игра</th>
+          <th>Цена</th>
         </tr>
-      <?php endforeach ?>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <?php foreach ($data['tournaments'] as $tournament): ?>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric"><?=$tournament['id']?></td>
+            <td>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent delete" tour_id="<?=$tournament['id']?>">
+                Удалить
+              </button>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored edit" tour_id="<?=$tournament['id']?>" title="<?=$tournament['title']?>" places="<?=$tournament['places']?>" free_places="<?=$tournament['free_places']?>" game="<?=$tournament['game']?>" description="<?=$tournament['description']?>" datetime="<?=$tournament['datetime']?>" price="<?=$tournament['price']?>">
+                Редактировать
+              </button>
+            </td>
+            <td><?=$tournament['title']?></td>
+            <td><?=$tournament['places']?>/<?=$tournament['free_places']?></td>
+            <td><?=$tournament['datetime']?></td>
+            <td><?=$tournament['game']?></td>
+            <td><?=$tournament['price']?></td>
+          </tr>
+        <?php endforeach ?>
+      </tbody>
+    </table>
+  <?php else: ?>
+    <h2 align="center">Тут пока ничего нет) Создайте свой первый турнир!</h2>
+  <?php endif ?>
 </div>
 <br>
 <br>
