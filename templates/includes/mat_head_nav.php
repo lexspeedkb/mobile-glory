@@ -30,7 +30,8 @@
         <a class="mdl-navigation__link" href="/organize">Организация</a>
       <?php endif ?>
       <?php if ($data['MyAccount']['admin']==1): ?>
-        <a class="mdl-navigation__link" href="/admin/users">Пользователи</a>
+        <a class="mdl-navigation__link" href="/admin/users">/Пользователи</a>
+        <a class="mdl-navigation__link" href="/admin/organizers">/Организаторы</a>
       <?php endif ?>
       <a class="mdl-navigation__link" href="mailto:mglorytournaments@gmail.com" target="__blank">Сотрудничество</a>
       <a class="mdl-navigation__link" href="/exit" target="__blank">Выход</a>

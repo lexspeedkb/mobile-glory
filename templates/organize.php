@@ -45,74 +45,73 @@
   <?php endif ?>
 </div>
 
-  <dialog class="mdl-dialog add-tournament">
-    <h4 class="mdl-dialog__title" id="addTournament_title">Создать турнир</h4>
-    <h4 class="mdl-dialog__title" id="editTournament_title" style="display: none">Редактировать турнир <span id="id_title"></span></h4>
-    <div class="mdl-dialog__content">
-      <input type="hidden" id="inp_id"><br>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="inp_title">
-        <label class="mdl-textfield__label" for="inp_title">Заголовок</label>
-      </div>
-      <br>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <textarea class="mdl-textfield__input" type="text" cols="30" rows="10" rows= "3" id="inp_description"></textarea>
-        <label class="mdl-textfield__label" for="inp_description">Описание</label>
-      </div>
-      <br>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inp_places">
-        <label class="mdl-textfield__label" for="inp_places">Всего мест</label>
-        <span class="mdl-textfield__error">Введите число!</span>
-      </div>
-
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inp_free_places">
-        <label class="mdl-textfield__label" for="inp_free_places">Свободных мест</label>
-        <span class="mdl-textfield__error">Введите число!</span>
-      </div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="datetime-local" id="inp_datetime" value="<?=$data['datetimeNow']?>">
-        <label class="mdl-textfield__label" for="inp_datetime">Дата проведения</label>
-      </div>
-      <br>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <select class="mdl-textfield__input" id="inp_game">
-          <option value="1">PUBG Mobile</option>
-        </select>
-        <label class="mdl-textfield__label" for="inp_game">Игра</label>
-      </div>
-      <br>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="inp_price">
-        <label class="mdl-textfield__label" for="inp_price">Цена участия РУБ</label>
-      </div>
+<dialog class="mdl-dialog add-tournament">
+  <h4 class="mdl-dialog__title" id="addTournament_title">Создать турнир</h4>
+  <h4 class="mdl-dialog__title" id="editTournament_title" style="display: none">Редактировать турнир <span id="id_title"></span></h4>
+  <div class="mdl-dialog__content">
+    <input type="hidden" id="inp_id"><br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="inp_title">
+      <label class="mdl-textfield__label" for="inp_title">Заголовок</label>
     </div>
-    <div class="mdl-dialog__actions">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="addTournament">
-        Создать турнир
-      </a>
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="editTournament" style="display: none">
-        Редактировать турнир
-      </a>
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect close">
-        Отмена
-      </a>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <textarea class="mdl-textfield__input" type="text" cols="30" rows="10" rows= "3" id="inp_description"></textarea>
+      <label class="mdl-textfield__label" for="inp_description">Описание</label>
     </div>
-  </dialog>
-  <script>
-    var dialog = document.querySelector('dialog');
-    if (! dialog.showModal) {
-      dialogPolyfill.registerDialog(dialog);
-    }
-    $('body').on('click', '.show-dialog', function() {
-      dialog.showModal();
-    });
-    dialog.querySelector('.close').addEventListener('click', function() {
-      dialog.close();
-    });
-  </script>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inp_places">
+      <label class="mdl-textfield__label" for="inp_places">Всего мест</label>
+      <span class="mdl-textfield__error">Введите число!</span>
+    </div>
 
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="inp_free_places">
+      <label class="mdl-textfield__label" for="inp_free_places">Свободных мест</label>
+      <span class="mdl-textfield__error">Введите число!</span>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="datetime-local" id="inp_datetime" value="<?=$data['datetimeNow']?>">
+      <label class="mdl-textfield__label" for="inp_datetime">Дата проведения</label>
+    </div>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <select class="mdl-textfield__input" id="inp_game">
+        <option value="1">PUBG Mobile</option>
+      </select>
+      <label class="mdl-textfield__label" for="inp_game">Игра</label>
+    </div>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="inp_price">
+      <label class="mdl-textfield__label" for="inp_price">Цена участия РУБ</label>
+    </div>
+  </div>
+  <div class="mdl-dialog__actions">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="addTournament">
+      Создать турнир
+    </a>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="editTournament" style="display: none">
+      Редактировать турнир
+    </a>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect close">
+      Отмена
+    </a>
+  </div>
+</dialog>
+<script>
+  var dialog = document.querySelector('dialog');
+  if (! dialog.showModal) {
+    dialogPolyfill.registerDialog(dialog);
+  }
+  $('body').on('click', '.show-dialog', function() {
+    dialog.showModal();
+  });
+  dialog.querySelector('.close').addEventListener('click', function() {
+    dialog.close();
+  });
+</script>
 
 <script>
   $(document).ready(function() {

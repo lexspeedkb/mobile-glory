@@ -267,7 +267,36 @@ class API{
 		return 0;
 	}
 
-	
+	public function addOrganizer(){
+		$this->admin();
+
+		$Organizers = new Organizers();
+
+		$owner_id   = $_GET['owner'];
+		$login      = $_GET['login'];
+		$link       = $_GET['link'];
+		$reputation = $_GET['reputation'];
+
+		$Organizers->add($owner_id, $login, $link, $reputation);
+
+		return 0;
+	}
+
+	public function editOrganizer(){
+		$this->admin();
+
+		$Organizers = new Organizers();
+
+		$id         = $_GET['id'];
+		$owner_id   = $_GET['owner'];
+		$login      = $_GET['login'];
+		$link       = $_GET['link'];
+		$reputation = $_GET['reputation'];
+
+		$Organizers->edit($id, $owner_id, $login, $link, $reputation);
+
+		return 0;
+	}
 
 }
 ?>

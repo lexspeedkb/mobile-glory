@@ -34,9 +34,6 @@
                 Бан
               </button>
             <?php endif ?>
-            
-            
-            
           </td>
           <td class="mdl-data-table__cell--non-numeric"><?=$user['login']?></td>
           <td class="mdl-data-table__cell--non-numeric"><?=$user['fio']?></td>

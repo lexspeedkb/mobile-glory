@@ -1194,3 +1194,9 @@ Stack trace:
 [06-May-2019 00:03:33 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$Engine' (T_VARIABLE), expecting ',' or ';' in D:\OSPanel\domains\mobile-glory\components\classes\class_Page.php on line 61
 [06-May-2019 00:03:43 Europe/Moscow] PHP Warning:  require(D:/OSPanel/domains/mobile-glory/templates/admin/users.php): failed to open stream: No such file or directory in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 34
 [06-May-2019 00:03:43 Europe/Moscow] PHP Fatal error:  require(): Failed opening required 'D:/OSPanel/domains/mobile-glory/templates/admin/users.php' (include_path='.;d:/ospanel/modules/php/PHP-7.0-x64;d:/ospanel/modules/php/PHP-7.0-x64/PEAR/pear') in D:\OSPanel\domains\mobile-glory\components\classes\class_Templates.php on line 34
+[06-May-2019 00:56:42 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Organizers::getAllUsers() in D:\OSPanel\domains\mobile-glory\components\controllers\admin\controller_organizers.php:5
+Stack trace:
+#0 D:\OSPanel\domains\mobile-glory\components\classes\class_Page.php(58): require()
+#1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
+#2 {main}
+  thrown in D:\OSPanel\domains\mobile-glory\components\controllers\admin\controller_organizers.php on line 5
