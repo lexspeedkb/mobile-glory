@@ -7,7 +7,7 @@ class Users{
 	public function getAllUsers(){
 		$SQL = new SQL();
 
-		$result = $SQL->query("SELECT * FROM `users`");
+		$result = $SQL->query("SELECT * FROM `users` ORDER BY id");
 		
 		return $result;
 	}
@@ -425,7 +425,10 @@ class Users{
 	}
 
 	public function banUser($id){
-		
+		$SQL = new SQL();
+
+		$SQL->query("UPDATE `session` SET hash='' WHERE user_id = '$id'");
+		$SQL->query("UPDATE `users` SET active='0' WHERE id = '$id'");
 	}
 }
 ?>
