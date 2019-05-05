@@ -65,5 +65,27 @@ $(document).ready(function() {
       }
     });
   });
+  $('body').on('click', '#set_organize', function() {
+    var user_id = $(this).attr("user_id");
+
+    $.ajax({
+      url: '/admin/api/setOrganizer',
+      data: {user_id_send: user_id},
+      success: function(){
+        location.reload();
+      }
+    });
+  });
+  $('body').on('click', '#de_set_organize', function() {
+    var user_id = $(this).attr("user_id");
+
+    $.ajax({
+      url: '/admin/api/de_setOrganizer',
+      data: {user_id_send: user_id},
+      success: function(){
+        location.reload();
+      }
+    });
+  });
 });
 </script>

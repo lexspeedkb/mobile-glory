@@ -243,5 +243,31 @@ class API{
 		return 0;
 	}
 
+	public function setOrganizer(){
+		$this->admin();
+
+		$Users = new Users();
+
+		$id = $_GET['user_id_send'];
+
+		$Users->setOrganizer($id);
+
+		return 0;
+	}
+
+	public function de_setOrganizer(){
+		$this->admin();
+
+		$Users = new Users();
+
+		$id = $_GET['user_id_send'];
+
+		$Users->de_setOrganizer($id);
+
+		return 0;
+	}
+
+	
+
 }
 ?>

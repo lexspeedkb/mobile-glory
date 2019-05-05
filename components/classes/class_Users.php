@@ -436,5 +436,17 @@ class Users{
 
 		$SQL->query("UPDATE `users` SET active='1' WHERE id = '$id'");
 	}
+
+	public function setOrganizer($id){
+		$SQL = new SQL();
+
+		$SQL->query("UPDATE `users` SET organizer='1' WHERE id = '$id'");
+	}
+
+	public function de_setOrganizer($id){
+		$SQL = new SQL();
+
+		$SQL->query("UPDATE `users` SET organizer='0' WHERE id = '$id'");
+	}
 }
 ?>
