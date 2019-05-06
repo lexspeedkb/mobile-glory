@@ -1,6 +1,9 @@
 <?php
 //script here
 $Engine = new Engine();
+$Wallet = new Wallet();
+
+$transactionsList = $Wallet->getMyTransactions($_COOKIE['id']);
 
 $id_pm_no = date("Y_m_d__H_i_s")."_".$Engine->generateRandomString(5);
 
@@ -28,6 +31,7 @@ $META_data = array(
 // Assignment values to $data array 
 $data['id_pm_no'] = $id_pm_no;
 $data['user_id']  = $user_id;
+$data['transactionsList'] = $transactionsList;
 
 // Assignment other data to $OTHER_data array 
 $OTHER_data['OG']   = $OG_data;
