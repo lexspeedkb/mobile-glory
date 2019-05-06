@@ -213,8 +213,9 @@ class API{
 
 	// INTERKASSA
 
-	public function interkassa_interaction(){
+	public function interkassa_interaction_UAH(){
 		$Wallet = new Wallet();
+		$Users  = new Users();
 
 		$key      = 'NwHmqxhvETWJc07g';
 		$keyDebug = 'rc5XaZ5TL2EmMshc';
@@ -239,7 +240,9 @@ class API{
 
 		$Wallet->addTransaction($_POST['ik_cur'], $_POST['ik_x_id'], $_POST['ik_am'], $_POST['ik_pm_no'], $status);
 
-		return $sign;
+		if ($status == 1) {
+			$Users->addBalance($_POST['ik_x_id'], $_POST['ik_am']);
+		}
 	}
 
 

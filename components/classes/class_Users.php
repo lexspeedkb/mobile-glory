@@ -424,6 +424,16 @@ class Users{
 
 	}
 
+	public function addBalance($id, $summ){
+		$SQL = new SQL();
+
+		$user = $SQL->query("SELECT * FROM `users` WHERE id = '$id'");
+
+		$newBalance = $user['balance']+$summ;
+
+		$SQL->query("UPDATE `users` SET balance='$newBalance' WHERE id = '$id'");
+	}
+
 	public function banUser($id){
 		$SQL = new SQL();
 
