@@ -16,8 +16,13 @@ class Tournaments{
 		return $tournamentsList;
 	}
 
-	public function add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer){
-		$SQL = new SQL();
+	public function add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer_owner_id){
+		$SQL        = new SQL();
+		$Organizers = new Organizers();
+
+		$organizer_data = $Organizers->getByOwnerId($organizer_owner_id);
+
+		$organizer = $organizer_data['id'];
 
 		$SQL->query("INSERT INTO tournaments (title, places, free_places, datetime, game, price, description, organizer, active) VALUES ('$title', '$places', '$free_places', '$datetime', '$game', '$price', '$description', '$organizer', '1')");
 		

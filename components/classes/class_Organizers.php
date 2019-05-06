@@ -8,6 +8,14 @@ class Organizers {
 		return $result;
 	}
 
+	public function getByOwnerId($owner_id){
+		$SQL = new SQL();
+
+		$result = $SQL->query("SELECT * FROM organizers WHERE owner_id='$owner_id'");
+
+		return $result;
+	}
+
 	public function getAll(){
 		$SQL = new SQL();
 

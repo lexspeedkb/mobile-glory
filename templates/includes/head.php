@@ -12,6 +12,9 @@
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#125eba">
+	
+	<!-- Interkassa -->
+	<meta name="interkassa-verification" content="b80b4e6daa903ea89d8007be38471d4e" />
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

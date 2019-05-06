@@ -5,7 +5,11 @@ $Tournaments = new Tournaments();
 if ($_GET['admin']==1) {
 	$tournamentsList = $Tournaments->getAll($_COOKIE['id']);
 }else {
-	$tournamentsList = $Tournaments->getAllByOrganizer($_COOKIE['id']);
+	$Organizers = new Organizers();
+
+	$organizer_data = $Organizers->getByOwnerId($_COOKIE['id']);
+
+	$tournamentsList = $Tournaments->getAllByOrganizer($organizer_data['id']);
 }
 
 $datetimeNow = datetime_local(date("Y-m-d H:i:s"));

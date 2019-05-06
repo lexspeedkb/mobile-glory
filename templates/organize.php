@@ -78,7 +78,7 @@
     <br>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
       <select class="mdl-textfield__input" id="inp_game">
-        <option value="1">PUBG Mobile</option>
+        <option value="PUBG Mobile">PUBG Mobile</option>
       </select>
       <label class="mdl-textfield__label" for="inp_game">Игра</label>
     </div>

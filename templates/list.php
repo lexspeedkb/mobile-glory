@@ -21,7 +21,7 @@
         <span>Дата и время: <?=$tournament['datetime']?></span>
         <br>
         <br>
-        Краткое описание турнира
+        <?=$tournament['description']?>
       </div>
       <div class="mdl-card__actions mdl-card--border">
         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="<?=$organizator['link']?>">
