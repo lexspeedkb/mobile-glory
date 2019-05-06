@@ -23,6 +23,7 @@
     <span class="mdl-layout-title"><?=SITE_NAME?></span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="/list">Турниры</a>
+      <a class="mdl-navigation__link" href="/myWallet">Кошелёк</a>
       <!-- <a class="mdl-navigation__link" href="">Редактировать профиль</a> -->
       <!-- <a class="mdl-navigation__link" href="">Настройки</a> -->
       <a class="mdl-navigation__link" href="/aboutUs">О нас</a>
