@@ -14,6 +14,7 @@
 	<meta name="theme-color" content="#3f51b5">
 
 	<!-- Styles -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 	<link rel="stylesheet" href="/templates/assets/css/main.css?v=2">

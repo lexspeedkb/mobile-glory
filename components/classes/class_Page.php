@@ -25,6 +25,7 @@ class Page extends SQL{
 		$lang 	  = $this->language();
 		
 		$data['MyAccount'] = $Users->currentLoginCheck();
+		$data['pieces']	   = $pieces;
 
 		if ($data['MyAccount']['admin']!='1' && $pieces[1]=='admin') {
 			die('NOT ADMIN!!!');
