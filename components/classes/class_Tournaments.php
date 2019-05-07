@@ -47,4 +47,4 @@ class Tournaments{
 		return 0;
 	}
 }
-?>	
+?>

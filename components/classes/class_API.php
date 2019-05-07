@@ -153,8 +153,18 @@ class API{
 		return $lang->$XML_tag;
 	}
 
+
+	/**
+	* 0 - OK
+	* 1 - incorreck promo code
+	* 2 - not enougth money
+	*
+	*/
 	public function addTournament(){
 		$Tournaments = new Tournaments();
+		$PromoCodes  = new PromoCodes();
+		$Users       = new Users();
+		$Wallet		 = new Wallet();
 
 		$title		 = $_GET['title'];
 		$places		 = $_GET['places'];
@@ -163,12 +173,32 @@ class API{
 		$game		 = $_GET['game'];
 		$price		 = $_GET['price'];
 		$description = $_GET['description'];
+		$promo_code  = $_GET['promo_code'];
 
 		$organizer = $_COOKIE['id'];
 
-		$Tournaments->add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer);
+		if (empty($title) || empty($places) || empty($free_places) || empty($game) || empty($price) || empty($description)) {
+			echo "3";
+		} else {
+			if (!empty($promo_code)) {
+				if ($PromoCodes->usePromoCode($promo_code)) {
+					$Tournaments->add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer);
+					echo "0";
+				} else {
+					echo "1";
+				}
+			} else {
+				if ($Users->removeBalance($organizer, ONE_POST_PRICE)) {
+					$removeSumm = $summ*(-1);
+					$Wallet->addTransaction('UAH', $organizer, $removeSumm, 'NULL', 1);
+					$Tournaments->add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer);
+					echo "0";
+				} else {
+					echo "2";
+				}
+			}
+		}
 
-		echo "0";
 	}
 
 	public function editTournament(){

@@ -434,6 +434,23 @@ class Users{
 		$SQL->query("UPDATE `users` SET balance='$newBalance' WHERE id = '$id'");
 	}
 
+	public function removeBalance($id, $summ){
+		$SQL    = new SQL();
+		$Wallet = new Wallet();
+
+		if ($Wallet->isEnougthMoney($id, $summ)) {
+			$user = $SQL->query("SELECT * FROM `users` WHERE id = '$id'");
+
+			$newBalance = $user['balance']-$summ;
+
+			$SQL->query("UPDATE `users` SET balance='$newBalance' WHERE id = '$id'");	
+
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	public function banUser($id){
 		$SQL = new SQL();
 

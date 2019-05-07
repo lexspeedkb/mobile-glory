@@ -30,5 +30,21 @@ class Wallet{
 
 		return $result;
 	}
+
+	public function isEnougthMoney($id_user, $summ){
+		$SQL   = new SQL();
+		$Users = new Users();
+
+		$user = $Users->getDataByID($id_user);
+
+		$balance = $user['balance'];
+
+		if ($balance<$summ) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 }
 ?>

@@ -87,6 +87,12 @@
       <input class="mdl-textfield__input" type="text" id="inp_price">
       <label class="mdl-textfield__label" for="inp_price">Цена участия РУБ</label>
     </div>
+    <br>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="inp_promo_code">
+      <label class="mdl-textfield__label" for="inp_promo_code">Промо-код</label>
+    </div>
+    
   </div>
   <div class="mdl-dialog__actions">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="addTournament">
@@ -101,8 +107,15 @@
   </div>
 </dialog>
 
+<div id="error-toast" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
 <script>
   $(document).ready(function() {
+    var snackbarContainer = document.querySelector('#error-toast');
+
     $('body').on('click', '.addTournament_fab', function() {
       var inp_title       = $('#inp_title').val('');
       var inp_description = $('#inp_description').val('');
@@ -126,12 +139,23 @@
       var inp_datetime    = $('#inp_datetime').val();
       var inp_game        = $('#inp_game').val();
       var inp_price       = $('#inp_price').val();
+      var inp_promo_code  = $('#inp_promo_code').val();
 
       $.ajax({
         url: '/api/addTournament',
-        data: {title: inp_title, places: inp_places, free_places: inp_free_places, datetime: inp_datetime, game: inp_game, price: inp_price, description: inp_description},
-        success: function(){
-          location.reload();
+        data: {title: inp_title, places: inp_places, free_places: inp_free_places, datetime: inp_datetime, game: inp_game, price: inp_price, description: inp_description, promo_code: inp_promo_code},
+        success: function(data_r){
+          if (data_r=="0") {
+            location.reload();
+          }else if (data_r=="1"){
+            var data_r = {message: 'Example Message # '};
+            snackbarContainer.MaterialSnackbar.showSnackbar(data_r);
+            alert("Неверный промокод");
+          }else if (data_r=="2"){
+            alert("Недостаточно средств. Пополните кошелёк для создания турнира, или воспользуйтесь промо-кодом");
+          }else if (data_r=="3"){
+            alert("Заполнены не все поля!");
+          }
         }
       });
     });

@@ -1221,3 +1221,9 @@ Stack trace:
 #1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
 #2 {main}
   thrown in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 344
+[08-May-2019 02:12:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function removeBalance() on null in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php:185
+Stack trace:
+#0 D:\OSPanel\domains\mobile-glory\components\classes\class_Page.php(81): API->addTournament()
+#1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
+#2 {main}
+  thrown in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 185

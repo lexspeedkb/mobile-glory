@@ -33,6 +33,13 @@ class PromoCodes{
     public function usePromoCode($code){
         $SQL = new SQL();
  
+        $result = $SQL->query("SELECT * FROM `promo_codes` WHERE code='$code'");
+
+        if (!empty($result['id'])) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 ?>

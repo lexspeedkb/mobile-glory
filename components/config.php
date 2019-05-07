@@ -43,6 +43,9 @@ $config = array(
 	'TIME_OF_SHORT_SESSION'			=> 1,
 	//Default page of logged user //Стандартная страница, которая открывается залогиненному пользователю
 	'USER_DEFAULT_PAGE'				=> 'list',
+
+	//PRICES
+	'ONE_POST_PRICE'				=> 50,
 	
 	
 	// SMTP
