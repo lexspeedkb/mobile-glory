@@ -35,7 +35,7 @@ th {
 tr:nth-child(2n) {
   background: #DDD; }
 
-.addTournament_fab, .addOrganizer_fab {
+.addFab {
   position: fixed;
   bottom: 20px;
   right: 20px; }
