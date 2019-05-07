@@ -1200,3 +1200,24 @@ Stack trace:
 #1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
 #2 {main}
   thrown in D:\OSPanel\domains\mobile-glory\components\controllers\admin\controller_organizers.php on line 5
+[07-May-2019 23:55:26 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\myWallet.php on line 1
+[08-May-2019 00:09:42 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in D:\OSPanel\domains\mobile-glory\templates\myWallet.php on line 18
+[08-May-2019 00:42:44 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\admin\promoCodes.php on line 14
+[08-May-2019 00:42:52 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\admin\promoCodes.php on line 14
+[08-May-2019 00:45:09 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\admin\promoCodes.php on line 14
+[08-May-2019 00:45:36 Europe/Moscow] PHP Warning:  Missing argument 1 for PromoCodes::generate(), called in D:\OSPanel\domains\mobile-glory\components\controllers\admin\controller_promoCodes.php on line 5 and defined in D:\OSPanel\domains\mobile-glory\components\classes\class_PromoCodes.php on line 7
+[08-May-2019 00:45:36 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\admin\promoCodes.php on line 14
+[08-May-2019 00:45:40 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\admin\promoCodes.php on line 14
+[08-May-2019 00:46:57 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\mobile-glory\templates\admin\promoCodes.php on line 14
+[08-May-2019 01:00:42 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function generate() on null in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php:344
+Stack trace:
+#0 D:\OSPanel\domains\mobile-glory\components\classes\class_Page.php(80): API->generatePromoCodes()
+#1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
+#2 {main}
+  thrown in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 344
+[08-May-2019 01:01:14 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function generate() on null in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php:344
+Stack trace:
+#0 D:\OSPanel\domains\mobile-glory\components\classes\class_Page.php(80): API->generatePromoCodes()
+#1 D:\OSPanel\domains\mobile-glory\index.php(13): Page->getPage()
+#2 {main}
+  thrown in D:\OSPanel\domains\mobile-glory\components\classes\class_API.php on line 344

@@ -210,6 +210,42 @@ class API{
 		}
 	}
 
+
+	// INTERKASSA
+
+	public function interkassa_interaction_UAH(){
+		$Wallet = new Wallet();
+		$Users  = new Users();
+
+		$key      = 'NwHmqxhvETWJc07g';
+		$keyDebug = 'rc5XaZ5TL2EmMshc';
+		
+		$status = 1;
+
+		$dataSet = $_POST;
+
+		if (!$dataSet) {
+			$status = 2;
+		}
+
+		unset($dataSet['ik_sign']);
+		ksort($dataSet, SORT_STRING);
+		array_push($dataSet, $keyDebug);
+		$signString = implode(':', $dataSet);
+		$sign = base64_encode(md5($signString, true));
+
+		if ($sign != $_POST['ik_sign']) {
+			$status = 3;
+		}
+
+		$Wallet->addTransaction($_POST['ik_cur'], $_POST['ik_x_id'], $_POST['ik_am'], $_POST['ik_pm_no'], $status);
+
+		if ($status == 1) {
+			$Users->addBalance($_POST['ik_x_id'], $_POST['ik_am']);
+		}
+	}
+
+
 	// ADMIN SCRIPTS
 
 	public function admin(){
@@ -298,5 +334,18 @@ class API{
 		return 0;
 	}
 
+	public function generatePromoCodes(){
+		$this->admin();
+
+		$PromoCodes = new PromoCodes();
+
+		$Organizers = new Organizers();
+
+		$count = $_GET['count'];
+
+		$PromoCodes->generate($count);
+
+		return 0;
+	}
 }
 ?>

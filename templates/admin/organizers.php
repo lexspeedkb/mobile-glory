@@ -1,4 +1,4 @@
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary addOrganizer_fab show-dialog">
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary addOrganizer_fab show-dialog addFab">
   <i class="material-icons">add</i>
 </button>
 
@@ -72,18 +72,6 @@
     </a>
   </div>
 </dialog>
-<script>
-  var dialog = document.querySelector('dialog');
-  if (! dialog.showModal) {
-    dialogPolyfill.registerDialog(dialog);
-  }
-  $('body').on('click', '.show-dialog', function() {
-    dialog.showModal();
-  });
-  dialog.querySelector('.close').addEventListener('click', function() {
-    dialog.close();
-  });
-</script>
 
 <script>
   $(document).ready(function() {
