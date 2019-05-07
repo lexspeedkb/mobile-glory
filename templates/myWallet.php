@@ -1,50 +1,52 @@
 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary pursahe show-dialog addFab">
   <i class="material-icons">add</i>
 </button>
-
-<div style=" overflow-x: auto;">
-  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%;">
-    <thead>
-      <tr>
-        <th class="mdl-data-table__cell--non-numeric">#</th>
-        <th class="mdl-data-table__cell--non-numeric">Сумма</th>
-        <th class="mdl-data-table__cell--non-numeric">Валюта</th>
-        <th class="mdl-data-table__cell--non-numeric">Дата и время</th>
-        <th class="mdl-data-table__cell--non-numeric">Статус</th>
-        <th class="mdl-data-table__cell--non-numeric">Уникальный номер платежа</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php foreach ($data['transactionsList'] as $transaction): ?>
-      	<?php
-      	if ($transaction['status']==1)
-      		$transaction['status_name'] = "Оплачено";
-      	if ($transaction['status']==2)
-      		$transaction['status_name'] = "Ошибка: пустой запрос";
-      	if ($transaction['status']==3)
-      		$transaction['status_name'] = "Ошибка: цифровая подпись не совпадает";
-      	?>
+<?php if (!empty($data['transactionsList'])): ?>
+  <div style=" overflow-x: auto;">
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%;">
+      <thead>
         <tr>
-          <td class="mdl-data-table__cell--non-numeric"><?=$transaction['id']?></td>
-          <td class="mdl-data-table__cell--non-numeric"><?=$transaction['summ']?></td>
-          <td class="mdl-data-table__cell--non-numeric"><?=$transaction['currency']?></td>
-          <td class="mdl-data-table__cell--non-numeric"><?=$transaction['datetime']?></td>
-          <td class="mdl-data-table__cell--non-numeric"><?=$transaction['status_name']?></td>
-          <td class="mdl-data-table__cell--non-numeric"><?=$transaction['pm_no']?></td>
+          <th class="mdl-data-table__cell--non-numeric">#</th>
+          <th class="mdl-data-table__cell--non-numeric">Сумма</th>
+          <th class="mdl-data-table__cell--non-numeric">Валюта</th>
+          <th class="mdl-data-table__cell--non-numeric">Дата и время</th>
+          <th class="mdl-data-table__cell--non-numeric">Статус</th>
+          <th class="mdl-data-table__cell--non-numeric">Уникальный номер платежа</th>
         </tr>
-      <?php endforeach ?>
-    </tbody>
-  </table>
-</div>
+      </thead>
+      <tbody>
+        <?php foreach ($data['transactionsList'] as $transaction): ?>
+        	<?php
+        	if ($transaction['status']==1)
+        		$transaction['status_name'] = "Оплачено";
+        	if ($transaction['status']==2)
+        		$transaction['status_name'] = "Ошибка: пустой запрос";
+        	if ($transaction['status']==3)
+        		$transaction['status_name'] = "Ошибка: цифровая подпись не совпадает";
+        	?>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric"><?=$transaction['id']?></td>
+            <td class="mdl-data-table__cell--non-numeric"><?=$transaction['summ']?></td>
+            <td class="mdl-data-table__cell--non-numeric"><?=$transaction['currency']?></td>
+            <td class="mdl-data-table__cell--non-numeric"><?=$transaction['datetime']?></td>
+            <td class="mdl-data-table__cell--non-numeric"><?=$transaction['status_name']?></td>
+            <td class="mdl-data-table__cell--non-numeric"><?=$transaction['pm_no']?></td>
+          </tr>
+        <?php endforeach ?>
+      </tbody>
+    </table>
+  </div>
+<?php else: ?>
+  <h3 align="center">Тут пока ничего нет) Пополните свой кошелёк впервые!</h3>
+<?php endif ?>
 
 <dialog class="mdl-dialog add-tournament">
   <form id="payment" name="payment" method="post" action="https://sci.interkassa.com/" enctype="utf-8">
-    <h4 class="mdl-dialog__title" id="addTournament_title">Создать организатора</h4>
-    <h4 class="mdl-dialog__title" id="editTournament_title" style="display: none">Редактировать организатора <span id="id_title"></span></h4>
+    <h4 class="mdl-dialog__title" id="addTournament_title">Пополнение кошелька</h4>
     <div class="mdl-dialog__content">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="ik_am" name="ik_am" value="100">
-        <label class="mdl-textfield__label" for="inp_reputation">Сумма пополнения (ГРН)</label>
+        <label class="mdl-textfield__label" for="ik_am">Сумма пополнения (ГРН)</label>
         <span class="mdl-textfield__error">Введите число!</span>
       </div>
       <br>

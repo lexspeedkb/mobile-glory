@@ -333,5 +333,19 @@ class API{
 
 		return 0;
 	}
+
+	public function generatePromoCodes(){
+		$this->admin();
+
+		$PromoCodes = new PromoCodes();
+
+		$Organizers = new Organizers();
+
+		$count = $_GET['count'];
+
+		$PromoCodes->generate($count);
+
+		return 0;
+	}
 }
 ?>

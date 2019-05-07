@@ -23,14 +23,13 @@
     <span class="mdl-layout-title"><?=SITE_NAME?></span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="/list">Турниры</a>
-      <!-- <a class="mdl-navigation__link" href="">Редактировать профиль</a> -->
-      <!-- <a class="mdl-navigation__link" href="">Настройки</a> -->
       <a class="mdl-navigation__link" href="/aboutUs">О нас</a>
       <?php if ($data['MyAccount']['organizer']==1): ?>
         <a class="mdl-navigation__link" href="/organize">Организация</a>
       <?php endif ?>
       <?php if ($data['MyAccount']['admin']==1): ?>
         <a class="mdl-navigation__link" href="/myWallet">Кошелёк</a>
+        <a class="mdl-navigation__link" href="/admin/promoCodes">/Промо коды</a>
         <a class="mdl-navigation__link" href="/admin/users">/Пользователи</a>
         <a class="mdl-navigation__link" href="/admin/organizers">/Организаторы</a>
       <?php endif ?>
