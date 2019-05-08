@@ -260,7 +260,7 @@ class API{
 
 		unset($dataSet['ik_sign']);
 		ksort($dataSet, SORT_STRING);
-		array_push($dataSet, $keyDebug);
+		array_push($dataSet, $key);
 		$signString = implode(':', $dataSet);
 		$sign = base64_encode(md5($signString, true));
 

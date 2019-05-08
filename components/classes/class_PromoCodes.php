@@ -36,6 +36,7 @@ class PromoCodes{
         $result = $SQL->query("SELECT * FROM `promo_codes` WHERE code='$code'");
 
         if (!empty($result['id'])) {
+            $SQL->query("DELETE FROM `promo_codes` WHERE code='$code'");
             return true;
         } else {
             return false;
