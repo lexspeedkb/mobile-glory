@@ -85,7 +85,7 @@
     <br>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
       <input class="mdl-textfield__input" type="text" id="inp_price">
-      <label class="mdl-textfield__label" for="inp_price">Цена участия РУБ</label>
+      <label class="mdl-textfield__label" for="inp_price">Цена участия ГРН</label>
     </div>
     <br>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">

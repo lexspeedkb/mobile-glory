@@ -189,7 +189,7 @@ class API{
 				}
 			} else {
 				if ($Users->removeBalance($organizer, ONE_POST_PRICE)) {
-					$removeSumm = $summ*(-1);
+					$removeSumm = ONE_POST_PRICE*(-1);
 					$Wallet->addTransaction('UAH', $organizer, $removeSumm, 'NULL', 1);
 					$Tournaments->add($title, $places, $free_places, $datetime, $game, $price, $description, $organizer);
 					echo "0";
